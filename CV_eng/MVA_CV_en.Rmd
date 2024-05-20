@@ -1,0 +1,288 @@
+---
+graphics: yes
+name: Milena
+surname: Vásquez-Amézquita
+position: "Associate Professor"
+address: "Faculty of Psychology, Universidad El Bosque"
+phone: (+57) 601-6489000 Ext. 1605
+email: "mvasquezam@unbosque.edu.co"
+www: grupo-codec.netlify.app/author/milena-vasquez-amezquita/
+orcid: 0000-0001-7317-8430
+googlescholar: XgNEpfgAAAAJ
+researchgate: Milena-Vasquez-Amezquita
+profilepic: "../images/MVA.jpg"
+aboutme: |
+  I am a researcher primarily interested in the neurocognitive bases of human affect and sexuality.
+date: "`r Sys.setlocale('LC_TIME','en_GB.utf8');format(Sys.Date(),'%d %B, %Y')`"
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa-cv.csl"
+headcolor: 6767C7
+docname: Academic Curriculum Vitae
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+pkgs <- c('vitae' ,'here' ,'tinytex' ,'tibble' ,'glue' ,'rmarkdown' ,'dplyr', 'readr' ,'yaml')
+xfun::pkg_attach2(pkgs)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data sctructure for tribbles
+             ,'magrittr'  # The Pipe |>
+             ,'here'      # Relative Filepaths
+             ,'readr'     # Data Loading
+             ,'tidyverse' # Needed for bind_rows and whatever
+             ,'scholar'   # Updating publications from google scholar
+             ,'kableExtra'# Adding technicalskills table
+            )
+
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# Packages loading
+lapply(packages, library, character.only = TRUE) |>
+  invisible()
+```
+
+# About me
+
+```{r experiencia, echo = FALSE}
+t.experiencia <- floor(year(Sys.time())-year(as.Date('01/01/09',format='%d/%m/%y')) - 1.5)
+```
+
+\begin{minipage}[c]{0.85\linewidth}
+Psychologist, Master in Basic and Applied Neurosciences and PhD in Neurosciences. Active associate researcher within the group \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Cognitive and Behavioural Sciences}} (classification \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} in MinCiencias). Associate Professor at the \href{https://grupo-codec.netlify.app/labpsiexp/}{\textbf{Laboratory of Experimental Psychology}} of the \href{https://www.uelbosque.edu.co/psicologia}{Faculty of Psychology} at \href{https://www.uelbosque.edu.co/}{Universidad El Bosque}. Postdoctoral stay at \href{https://www.cuc.edu.co/}{Universidad de la Costa} with funding from \href{https://minciencias.gov.co/}{MinCiencias}. I have been director and co-director of successful research projects from an experimental methodology in cognitive-affective neuroscience with internal and external funding, and I currently directing the research hotbed \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: sexuality and affectivity from a neurocognitive perspective}}. I have `r t.experiencia` years of professional and university teaching experience, applied to the development and implementation of undergraduate and postgraduate higher education programmes related to the neurobiological and cognitive bases of human behaviour, and I have supervised undergraduate, masters and doctoral degree projects.
+\end{minipage} \begin{minipage}[c]{0.15\linewidth}
+\begin{flushright} 
+\hfill \href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_SEXCOG.png}} \newline \href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_CODEC.png}}
+\end{flushright}
+\end{minipage}
+
+# Skills
+
+\begin{cvskills}
+  \cvskill
+    {Programming}
+    {\href{https://www.r-project.org/}{\textbf{R}} (advanced: all data wrangling, analysis, plots and tables —and even this CV— made in R)}
+
+  \cvskill
+    {Reproducible Reports}
+    {Markdown/\href{https://rmarkdown.rstudio.com/}{R Markdown} (including {\fontfamily{cmr}\selectfont\LaTeX} and HTML\faHtml5). Version control: \href{https://git-scm.com/}{Git} \faGit* and \href{https://github.com/JDLeongomez}{GitHub} \faGithub}
+
+  \cvskill
+    {Quantitative Research}
+    {General and generalised models, linear mixed-effects models, multi-model inference, machine learning}
+
+  \cvskill
+    {Software}
+    {\href{https://posit.co/products/open-source/rstudio/}{RStudio}, \href{https://code.visualstudio.com/}{Visual Studio Code}, \href{https://www.fon.hum.uva.nl/praat/}{Praat}, \href{https://www.audacityteam.org/}{Audacity}, \href{https://inkscape.org/}{InkScape}, \href{https://www.zotero.org/}{Zotero}}
+
+  \cvskill
+    {Languages}
+    {English/Spanish (native)}
+\end{cvskills}
+
+# Research
+
+\begin{cvskills}
+  \cvskill
+    {Research Areas}
+    {\textbf{Human voice • Vocal modulation • Mate choice • Human behaviour}}
+
+  \cvskill
+    {Primary Research Methods}
+    {Experimental designs • Acoustic analysis • Geometric morphometrics • Stimuli rating}
+\end{cvskills}
+
+# Education
+
+```{r education}
+readxl::read_excel("../data/education_en.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Relevant further education
+
+```{r edu_comp}
+readxl::read_excel("../data/edu_comp_en.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Academic Experience
+
+```{r teaching-experience}
+readxl::read_excel("../data/teaching-experience_en.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Professional Experience
+
+```{r working-experience}
+readxl::read_excel("../data/working-experience_en.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Grants
+
+```{r grant}
+readxl::read_excel("../data/grant_en.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Scholarships, Awards and Honors
+
+```{r award}
+readxl::read_excel("../data/award_en.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Publications
+
+```{r scholar, echo = FALSE}
+profile <- get_profile("XgNEpfgAAAAJ")
+pubs <- get_publications("XgNEpfgAAAAJ")
+
+h_index <- profile$h_index
+g_index <- max(which(as.numeric(row.names(pubs))^2 < cumsum(pubs$cites)))
+i10_index <- profile$i10_index
+pubs_num <- dim(pubs)[1]
+citSum <- profile$total_cites
+meancit <- round(mean(pubs$cites), 2)
+mediancit <- median(pubs$cites)
+```
+
+\begin{tcolorbox}[enhanced,
+        on line, 
+        boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
+        colframe=white,colback=teal,
+        hyperurl={https://scholar.google.com/citations?user=XgNEpfgAAAAJ}]
+  
+\color{white}
+  \begin{minipage}[c]{0.245\linewidth}
+    \begin{center} 
+      \begin{huge} `r h_index` \end{huge}
+     \begin{small} \textit{h}-index \end{small} 
+    \end{center} 
+  \end{minipage} 
+  \begin{minipage}[c]{0.245\linewidth}
+    \begin{center} 
+      \begin{huge} `r g_index` \end{huge}
+      \begin{small} \textit{g}-index \end{small} 
+    \end{center}
+  \end{minipage} 
+  \begin{minipage}[c]{0.245\linewidth}
+    \begin{center} 
+      \begin{huge} `r i10_index` \end{huge}
+      \begin{small} i10-index \end{small} 
+    \end{center}
+  \end{minipage} 
+  \begin{minipage}[c]{0.245\linewidth}
+    \begin{center}  
+      \begin{huge} `r pubs_num` \end{huge}
+      \begin{small} Publications \end{small} 
+    \end{center}
+  \end{minipage} 
+  
+  \begin{center} \noindent\line(1,0){150} Citations \noindent\line(1,0){150} \end{center}
+  
+  \begin{minipage}[c]{0.325\linewidth}  
+    \begin{center} 
+      \begin{small} Total \end{small} 
+      \begin{LARGE} `r citSum` \end{LARGE} 
+    \end{center}
+  \end{minipage} 
+  \begin{minipage}[c]{0.325\linewidth}
+    \begin{center} 
+      \begin{small} Mean \end{small} 
+      \begin{LARGE} `r meancit` \end{LARGE}
+    \end{center}
+  \end{minipage} 
+  \begin{minipage}[c]{0.325\linewidth}
+    \begin{center}  
+      \begin{small} Median \end{small} 
+      \begin{LARGE} `r mediancit` \end{LARGE}
+   \end{center}
+  \end{minipage} 
+\end{tcolorbox}
+
+## \textbf{Journal Articles}
+
+\begingroup
+\footnotesize
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+`r knitr::knit_child("../bib/journal.txt")`
+
+\endgroup
+
+## \textbf{Articles under Review}
+
+\begingroup
+\footnotesize
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+`r knitr::knit_child("../bib/working_paper.txt")`
+
+\endgroup
+
+# Conference Presentations, Posters and Workshops
+
+\begingroup
+\footnotesize
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+`r knitr::knit_child("../bib/poster_en.txt")`
+
+\endgroup
+
+# Organisation of Scientific Events
+
+```{r event}
+readxl::read_excel("../data/event_en.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Research Supervision
+
+## \textbf{Postgraduate}
+
+The Faculty of Psychology at Universidad El Bosque does not offer research degrees, and all M-level courses are professional masters. Because of this, opportunities to supervise postgraduate students are limited, and most of my postgraduate supervision has been external.
+
+```{r supervision}
+readxl::read_excel("../data/supervision_pos_en.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+## \textbf{Undergraduate}
+
+The supervised undergraduate students listed below come from different universities and academic programmes. This list only includes students for whom I was the main supervisor or who were awarded honours degrees. Additionally, I am currently supervising six students as a principal supervisor, and have supervised over 25 students as a co-supervisor.
+
+```{r supervision-pre}
+readxl::read_excel("../data/supervision_pre_en.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```

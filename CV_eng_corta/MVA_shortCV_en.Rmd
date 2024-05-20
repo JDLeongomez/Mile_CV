@@ -1,0 +1,179 @@
+---
+graphics: yes
+name: Milena
+surname: Vásquez-Amézquita
+position: "Associate Professor"
+address: "Faculty of Psychology, Universidad El Bosque"
+phone: (+57) 601-6489000 Ext. 1605
+email: "mvasquezam@unbosque.edu.co"
+www: grupo-codec.netlify.app/author/milena-vasquez-amezquita/
+orcid: 0000-0001-7317-8430
+googlescholar: XgNEpfgAAAAJ
+researchgate: Milena-Vasquez-Amezquita
+profilepic: "../images/MVA.jpg"
+aboutme: |
+  I am a researcher primarily interested in the neurocognitive bases of human affect and sexuality.
+date: "`r Sys.setlocale('LC_TIME','en_GB.utf8');format(Sys.Date(),'%d %B, %Y')`"
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa-cv.csl"
+headcolor: 6767C7
+docname: Short Curriculum Vitae
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+pkgs <- c('vitae' ,'here' ,'tinytex' ,'tibble' ,'glue' ,'rmarkdown' ,'dplyr', 'readr' ,'yaml')
+xfun::pkg_attach2(pkgs)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data sctructure for tribbles
+             ,'magrittr'  # The Pipe |>
+             ,'here'      # Relative Filepaths
+             ,'readr'     # Data Loading
+             ,'tidyverse' # Needed for bind_rows and whatever
+             ,'scholar'   # Updating publications from google scholar
+             ,'kableExtra'# Adding technicalskills table
+            )
+
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# Packages loading
+lapply(packages, library, character.only = TRUE) |>
+  invisible()
+```
+
+# About me
+
+```{r experiencia, echo = FALSE}
+t.experiencia <- floor(year(Sys.time())-year(as.Date('01/01/09',format='%d/%m/%y')) - 1.5)
+```
+
+\begin{minipage}[c]{0.85\linewidth}
+Psychologist, Master in Basic and Applied Neurosciences and PhD in Neurosciences. Active associate researcher within the group \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Cognitive and Behavioural Sciences}} (classification \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} in MinCiencias). Associate Professor at the \href{https://grupo-codec.netlify.app/labpsiexp/}{\textbf{Laboratory of Experimental Psychology}} of the \href{https://www.uelbosque.edu.co/psicologia}{Faculty of Psychology} at \href{https://www.uelbosque.edu.co/}{Universidad El Bosque}. Postdoctoral stay at \href{https://www.cuc.edu.co/}{Universidad de la Costa} with funding from \href{https://minciencias.gov.co/}{MinCiencias}. I have been director and co-director of successful research projects from an experimental methodology in cognitive-affective neuroscience with internal and external funding, and I currently directing the research hotbed \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: sexuality and affectivity from a neurocognitive perspective}}. I have `r t.experiencia` years of professional and university teaching experience, applied to the development and implementation of undergraduate and postgraduate higher education programmes related to the neurobiological and cognitive bases of human behaviour, and I have supervised undergraduate, masters and doctoral degree projects.
+\end{minipage} \begin{minipage}[c]{0.15\linewidth}
+\begin{flushright} 
+\hfill \href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_SEXCOG.png}} \newline \href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_CODEC.png}}
+\end{flushright}
+\end{minipage}
+
+# Skills
+
+\begin{cvskills}
+  \cvskill
+    {Programming}
+    {\href{https://www.r-project.org/}{\textbf{R}} (advanced: all data wrangling, analysis, plots and tables —and even this CV— made in R)}
+
+  \cvskill
+    {Reproducible Reports}
+    {Markdown/\href{https://rmarkdown.rstudio.com/}{R Markdown} (including {\fontfamily{cmr}\selectfont\LaTeX} and HTML\faHtml5). Version control: \href{https://git-scm.com/}{Git} \faGit* and \href{https://github.com/JDLeongomez}{GitHub} \faGithub}
+
+  \cvskill
+    {Quantitative Research}
+    {General and generalised models, linear mixed-effects models, multi-model inference, machine learning}
+
+  \cvskill
+    {Software}
+    {\href{https://posit.co/products/open-source/rstudio/}{RStudio}, \href{https://code.visualstudio.com/}{Visual Studio Code}, \href{https://www.fon.hum.uva.nl/praat/}{Praat}, \href{https://www.audacityteam.org/}{Audacity}, \href{https://inkscape.org/}{InkScape}, \href{https://www.zotero.org/}{Zotero}}
+
+  \cvskill
+    {Languages}
+    {English/Spanish (native)}
+\end{cvskills}
+
+# Education
+
+```{r education}
+readxl::read_excel("../data/education_eng_S.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Academic and Professional Experience
+
+For a full list, and a description of responsibilities, please check [my website](https://jdleongomez.info/en/profile/#experience) or my [academic CV](https://jdleongomez.info/en/files/MVA_CV_en.pdf).
+
+```{r working-experience}
+readxl::read_excel("../data/working-experience_eng_S.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Accomplishments
+
+For information on **grants**, **scholarships**, **awards** and **prizes**, please check [my website](https://jdleongomez.info/en/profile/#accomplishments) or my [academic CV](https://jdleongomez.info/en/files/MVA_CV_en.pdf).
+
+# Selected Publications
+
+```{r scholar, echo = FALSE}
+profile <- get_profile("XgNEpfgAAAAJ")
+pubs <- get_publications("XgNEpfgAAAAJ")
+
+h_index <- profile$h_index
+g_index <- max(which(as.numeric(row.names(pubs))^2 < cumsum(pubs$cites)))
+i10_index <- profile$i10_index
+pubs_num <- dim(pubs)[1]
+citSum <- profile$total_cites
+```
+
+\begin{tcolorbox}[enhanced,
+        on line, 
+        boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
+        colframe=white,colback=violet,
+        hyperurl={https://scholar.google.com/citations?user=XgNEpfgAAAAJ}]
+  
+\color{white}
+\begin{minipage}[c]{0.195\linewidth}
+  \begin{center} \begin{huge} `r h_index` \end{huge}
+  \begin{small} \textit{h}-index \end{small} \end{center} 
+\end{minipage} \begin{minipage}[c]{0.195\linewidth}
+  \begin{center} \begin{huge} `r g_index` \end{huge}
+  \begin{small} \textit{g}-index \end{small} \end{center}
+\end{minipage} \begin{minipage}[c]{0.195\linewidth}
+  \begin{center} \begin{huge} `r i10_index` \end{huge}
+  \begin{small} i10-index \end{small} \end{center}
+\end{minipage} \begin{minipage}[c]{0.195\linewidth}
+  \begin{center} \begin{huge} `r pubs_num` \end{huge}
+  \begin{small} Publications \end{small} \end{center}
+\end{minipage} \begin{minipage}[c]{0.195\linewidth}  
+  \begin{center} \begin{huge} `r citSum` \end{huge} 
+  \begin{small} Citations \end{small} \end{center}
+\end{minipage}
+\end{tcolorbox}
+
+For a full list, please check the publications section on [my website](https://jdleongomez.info/en/publication/) or my [academic CV](https://jdleongomez.info/en/files/MVA_CV_en.pdf). 
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+`r knitr::knit_child("../bib/featured.txt")`
+
+\endgroup
+
+\begin{footnotesize}
+\textbf{Note:} Corresponding author in all the publications listed in this section.
+\end{footnotesize}
+
+# Postgraduate Supervision
+
+For a full list, including undergraduate supervision, please check [my website](https://jdleongomez.info/en/team/) or my [academic CV](https://jdleongomez.info/en/files/MVA_CV_en.pdf).
+
+```{r supervision}
+readxl::read_excel("../data/supervision_eng_S.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Editorial Appointments
+
+I am a [recommender](https://rr.peercommunityin.org/about/recommenders) (editor) for [Peer Community In Registered Reports](https://rr.peercommunityin.org/) and recently acted as guest editor for a two-part theme issue on [Philosophical Transactions B](https://royalsocietypublishing.org/journal/rstb) ([Part 1](https://royalsocietypublishing.org/toc/rstb/2021/376/1840), [Part 2](https://royalsocietypublishing.org/toc/rstb/2022/377/1841)). I regularly serve as an \textit{ad-hoc} reviewer for a number of journals, such as [Proceedings of the Royal Society B: Biological Sciences](https://royalsocietypublishing.org/journal/rspb), [Royal Society Open Science](https://royalsocietypublishing.org/journal/rsos), [PLOS ONE](https://journals.plos.org/plosone/), [Evolution and Human Behavior](https://www.sciencedirect.com/journal/evolution-and-human-behavior), [Scientific Reports](https://www.nature.com/srep/), [Basic and Applied Social Psychology](https://www.tandfonline.com/toc/hbas20/current), [Cortex](https://www.journals.elsevier.com/cortex), [Perception](https://journals.sagepub.com/home/pec),
+[Evolutionary Psychology](https://journals.sagepub.com/home/evp), and [Frontiers in Psychology](https://www.frontiersin.org/journals/psychology) where I am a [Review Editor](https://loop.frontiersin.org/people/438954/overview) for the [\textit{Evolutionary Psychology specialty section}](https://www.frontiersin.org/journals/psychology/sections/evolutionary-psychology).  My verified record can be viewed on my [Web of Science](https://www.webofscience.com/wos/author/record/387716) profile.
