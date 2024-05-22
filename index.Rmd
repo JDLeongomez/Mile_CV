@@ -18,7 +18,7 @@ a:link {
 }
 ```
 
-[`r icon_style(icons::academicons("researchgate"), scale = 2.5,  fill = "violet")`](https://www.researchgate.net/profile/Milena-Vasquez-Amezquita)   [`r icon_style(icons::academicons("google-scholar"), scale = 2,  fill = "violet")`](https://scholar.google.co.uk/citations?user=XgNEpfgAAAAJ)   [`r fontawesome::fa(name = "github", height = "1.8em")`](https://github.com/XXXXXX/CV)   
+[`r icon_style(icons::academicons("orcid"), scale = 2,  fill = "violet")`](https://orcid.org/0000-0001-7317-8430)   [`r icon_style(icons::academicons("google-scholar"), scale = 2,  fill = "violet")`](https://scholar.google.co.uk/citations?user=XgNEpfgAAAAJ)   [`r icon_style(icons::academicons("researchgate"), scale = 2.5,  fill = "violet")`](https://www.researchgate.net/profile/Milena-Vasquez-Amezquita)
 
 ______________________
 
@@ -29,6 +29,11 @@ In this page, you can see or download either my full, academic CV, or a short, 2
 * [Academic CV](https://jdleongomez.github.io/JDL_CV/CV_eng/JDL_CV_en.pdf)
 * [Short CV](https://jdleongomez.github.io/JDL_CV/CV_eng_corta/JDL_shortCV_en.pdf) (2 pages)
 
+______________________
+ 
+***Note:*** The repository with the code to create this HV is available at [GitHub `r fontawesome::fa(name = "github")`](https://github.com/xxxx/CV)
+
+______________________
 
 ### Español
 
@@ -36,3 +41,9 @@ En esta página, puedes ver o descargar tanto mi hoja de vida académica, o una 
 
 * [Hoja de vida académica](https://jdleongomez.github.io/JDL_CV/CV_esp/JDL_CV_es.pdf)
 * [Hoja de vida resumida](https://jdleongomez.github.io/JDL_CV/CV_esp_corta/JDL_shortCV_es.pdf) (2 páginas) 
+
+______________________
+
+***Nota:*** El repositorio con el código para crear esta HV está disponible en [GitHub `r fontawesome::fa(name = "github")`](https://github.com/xxxx/CV)
+
+______________________
