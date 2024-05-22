@@ -18,7 +18,7 @@ a:link {
 }
 ```
 
-[`r icon_style(icons::academicons("google-scholar"), scale = 2,  fill = "violet")`](https://scholar.google.co.uk/citations?user=XgNEpfgAAAAJ)   [`r icon_style(icons::academicons("researchgate"), scale = 2.5,  fill = "violet")`](https://www.researchgate.net/profile/Milena-Vasquez-Amezquita)   [`r fontawesome::fa(name = "github", height = "2em")`](https://github.com/XXXXXX/CV)   
+[`r icon_style(icons::academicons("researchgate"), scale = 2.5,  fill = "violet")`](https://www.researchgate.net/profile/Milena-Vasquez-Amezquita)   [`r icon_style(icons::academicons("google-scholar"), scale = 2,  fill = "violet")`](https://scholar.google.co.uk/citations?user=XgNEpfgAAAAJ)   [`r fontawesome::fa(name = "github", height = "1.8em")`](https://github.com/XXXXXX/CV)   
 
 ______________________
 
