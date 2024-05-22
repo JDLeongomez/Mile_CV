@@ -1,0 +1,38 @@
+---
+title: "CV - Milena Vásquez-Amézquita"
+author: ""
+output: 
+  html_document:
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(fontawesome)
+library(icons)
+```
+
+```{css, echo=FALSE}
+a:link {
+  color: violet;
+}
+```
+
+[`r icon_style(icons::academicons("google-scholar"), scale = 2,  fill = "violet")`](https://scholar.google.co.uk/citations?user=XgNEpfgAAAAJ)   [`r icon_style(icons::academicons("researchgate"), scale = 2.5,  fill = "violet")`](https://www.researchgate.net/profile/Milena-Vasquez-Amezquita)   [`r fontawesome::fa(name = "github", height = "2em")`](https://github.com/XXXXXX/CV)   
+
+______________________
+
+### English
+
+In this page, you can see or download either my full, academic CV, or a short, 2-page short CV.
+
+* [Academic CV](https://jdleongomez.github.io/JDL_CV/CV_eng/JDL_CV_en.pdf)
+* [Short CV](https://jdleongomez.github.io/JDL_CV/CV_eng_corta/JDL_shortCV_en.pdf) (2 pages)
+
+
+### Español
+
+En esta página, puedes ver o descargar tanto mi hoja de vida académica, o una hoja de vida resumida de 2 páginas:
+
+* [Hoja de vida académica](https://jdleongomez.github.io/JDL_CV/CV_esp/JDL_CV_es.pdf)
+* [Hoja de vida resumida](https://jdleongomez.github.io/JDL_CV/CV_esp_corta/JDL_shortCV_es.pdf) (2 páginas) 
