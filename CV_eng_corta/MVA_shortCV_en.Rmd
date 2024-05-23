@@ -67,19 +67,19 @@ Psychologist, Master in Basic and Applied Neurosciences and PhD in Neurosciences
 \begin{cvskills}
   \cvskill
     {Programming}
-    {\href{https://www.r-project.org/}{\textbf{R}} (advanced: all data wrangling, analysis, plots and tables —and even this CV— made in R)}
-
-  \cvskill
-    {Reproducible Reports}
-    {Markdown/\href{https://rmarkdown.rstudio.com/}{R Markdown} (including {\fontfamily{cmr}\selectfont\LaTeX} and HTML\faHtml5). Version control: \href{https://git-scm.com/}{Git} \faGit* and \href{https://github.com/JDLeongomez}{GitHub} \faGithub}
+    {\href{https://www.r-project.org/}{\textbf{R}} (Basic, data analysis and graph generation)}
 
   \cvskill
     {Quantitative Research}
-    {General and generalised models, linear mixed-effects models, multi-model inference, machine learning}
+    {Observational-correlational studies, Simple and Mixed general linear models}
+  
+  \cvskill
+    {Recording techniques}
+    {Eye tracking (mainly), other basic HRV, EEG}
 
   \cvskill
     {Software}
-    {\href{https://posit.co/products/open-source/rstudio/}{RStudio}, \href{https://code.visualstudio.com/}{Visual Studio Code}, \href{https://www.fon.hum.uva.nl/praat/}{Praat}, \href{https://www.audacityteam.org/}{Audacity}, \href{https://inkscape.org/}{InkScape}, \href{https://www.zotero.org/}{Zotero}}
+    {RStudio, Tobii Pro Lab, Qualtrics, Psychomorph, WebmorphR, Mendeley and Zotero}
 
   \cvskill
     {Languages}
@@ -95,9 +95,18 @@ readxl::read_excel("../data/education_eng_S.xlsx") |>
                           .protect = FALSE)
 ```
 
-# Academic and Professional Experience
+# Research Experience
 
-For a full list, and a description of responsibilities, please check [my website](https://jdleongomez.info/en/profile/#experience) or my [academic CV](https://jdleongomez.info/en/files/MVA_CV_en.pdf).
+```{r research-experience}
+readxl::read_excel("../data/research-experience_eng_S.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Professional Experience
+
+For a full list, and a description of responsibilities, please check my [academic CV](https://jdleongomez.github.io/Mile_CV/CV_eng/MVA_CV_en.pdf).
 
 ```{r working-experience}
 readxl::read_excel("../data/working-experience_eng_S.xlsx") |>
@@ -108,7 +117,7 @@ readxl::read_excel("../data/working-experience_eng_S.xlsx") |>
 
 # Accomplishments
 
-For information on **grants**, **scholarships**, **awards** and **prizes**, please check [my website](https://jdleongomez.info/en/profile/#accomplishments) or my [academic CV](https://jdleongomez.info/en/files/MVA_CV_en.pdf).
+For information on **grants**, **scholarships**, **awards** and **prizes**, please check my [academic CV](https://jdleongomez.github.io/Mile_CV/CV_eng/MVA_CV_en.pdf).
 
 # Selected Publications
 
@@ -148,7 +157,7 @@ citSum <- profile$total_cites
 \end{minipage}
 \end{tcolorbox}
 
-For a full list, please check the publications section on [my website](https://jdleongomez.info/en/publication/) or my [academic CV](https://jdleongomez.info/en/files/MVA_CV_en.pdf). 
+For a full list, please check the publications section on my [academic CV](https://jdleongomez.github.io/Mile_CV/CV_eng/MVA_CV_en.pdf). 
 
 \begingroup
 \setlength{\parindent}{-0.5in}
@@ -158,13 +167,9 @@ For a full list, please check the publications section on [my website](https://j
 
 \endgroup
 
-\begin{footnotesize}
-\textbf{Note:} Corresponding author in all the publications listed in this section.
-\end{footnotesize}
-
 # Postgraduate Supervision
 
-For a full list, including undergraduate supervision, please check [my website](https://jdleongomez.info/en/team/) or my [academic CV](https://jdleongomez.info/en/files/MVA_CV_en.pdf).
+For a full list, including undergraduate supervision, please check my [academic CV](https://jdleongomez.github.io/Mile_CV/CV_eng/MVA_CV_en.pdf).
 
 ```{r supervision}
 readxl::read_excel("../data/supervision_eng_S.xlsx") |>
@@ -172,8 +177,3 @@ readxl::read_excel("../data/supervision_eng_S.xlsx") |>
   vitae::detailed_entries(what, when, with, where, why,
                           .protect = FALSE)
 ```
-
-# Editorial Appointments
-
-I am a [recommender](https://rr.peercommunityin.org/about/recommenders) (editor) for [Peer Community In Registered Reports](https://rr.peercommunityin.org/) and recently acted as guest editor for a two-part theme issue on [Philosophical Transactions B](https://royalsocietypublishing.org/journal/rstb) ([Part 1](https://royalsocietypublishing.org/toc/rstb/2021/376/1840), [Part 2](https://royalsocietypublishing.org/toc/rstb/2022/377/1841)). I regularly serve as an \textit{ad-hoc} reviewer for a number of journals, such as [Proceedings of the Royal Society B: Biological Sciences](https://royalsocietypublishing.org/journal/rspb), [Royal Society Open Science](https://royalsocietypublishing.org/journal/rsos), [PLOS ONE](https://journals.plos.org/plosone/), [Evolution and Human Behavior](https://www.sciencedirect.com/journal/evolution-and-human-behavior), [Scientific Reports](https://www.nature.com/srep/), [Basic and Applied Social Psychology](https://www.tandfonline.com/toc/hbas20/current), [Cortex](https://www.journals.elsevier.com/cortex), [Perception](https://journals.sagepub.com/home/pec),
-[Evolutionary Psychology](https://journals.sagepub.com/home/evp), and [Frontiers in Psychology](https://www.frontiersin.org/journals/psychology) where I am a [Review Editor](https://loop.frontiersin.org/people/438954/overview) for the [\textit{Evolutionary Psychology specialty section}](https://www.frontiersin.org/journals/psychology/sections/evolutionary-psychology).  My verified record can be viewed on my [Web of Science](https://www.webofscience.com/wos/author/record/387716) profile.

@@ -68,35 +68,35 @@ Psicóloga, Máster en Neurociencias Básicas y Aplicadas y Doctora en Neurocien
 \begin{cvskills}
   \cvskill
     {Programación}
-    {\href{https://www.r-project.org/}{\textbf{R}} (avanzado: todo el procesamiento de datos, análisis, diagramas y tablas —e incluso esta HV— hechos en R)}
+    {\href{https://www.r-project.org/}{\textbf{R}} (Básico, análisis de datos y generación de gráficos)}
 
   \cvskill
-    {Informes reproducibles}
-    {Markdown/\href{https://rmarkdown.rstudio.com/}{R Markdown} (incluyendo código  \href{https://www.latex-project.org/}{{\fontfamily{cmr}\selectfont\LaTeX}} y \href{https://html.spec.whatwg.org/}{HTML}\faHtml5). Control de versiones: \href{https://git-scm.com/}{Git} \faGit* y \href{https://github.com/JDLeongomez}{GitHub} \faGithub}
-
+    {Investigación cuantitativa}
+    {Estudios observacionales-correlacionales, Modelos lineales generales simples y mixtos}
+  
   \cvskill
-    {Investigación Cuantitativa}
-    {Modelado estadístico, modelos de efectos mixtos, inferencia multimodelo, \textit{machine learning}}
+    {Técnicas de registro}
+    {Rastreo Ocular (principalmente), otras básicas HRV, EEG}
 
   \cvskill
     {Software}
-    {\href{https://posit.co/products/open-source/rstudio/}{RStudio}, \href{https://code.visualstudio.com/}{Visual Studio Code}, \href{https://www.fon.hum.uva.nl/praat/}{Praat}, \href{https://www.audacityteam.org/}{Audacity}, \href{https://inkscape.org/}{InkScape}, \href{https://www.zotero.org/}{Zotero}}
+    {RStudio, Tobii Pro Lab, Qualtrics, Psychomorph, WebmorphR, Mendeley y Zotero}
 
   \cvskill
-    {Idiomas}
-    {Inglés/Español}
+    {Languages}
+    {Español/Inglés}
 \end{cvskills}
 
 # Investigación
 
 \begin{cvskills}
   \cvskill
-    {Areas de Investigacion}
-    {\textbf{Voz humana • Modulación vocal • Elección de pareja • Comportamiento humano}}
+    {Áreas de investigación}
+    {\textbf{Respuesta sexual humana • Preferencias sexuales típicas y atípicas • Pedohebefilia • Conductas \newline sexuales perjudiciales • Elección de pareja • Sesgos atencionales}}
 
   \cvskill
-    {Principales Métodos de Investigación}
-    {Diseños experimentales • Análisis acústico • Morfometría • Calificación de estímulos}
+    {Principales métodos de investigación}
+    {Diseños experimentales • Paradigmas de visualización libre y elección forzada de estímulos • Evaluación \newline subjetiva de estímulos visuales • Escalas psicométricos}
 \end{cvskills}
 
 # Educación
@@ -121,6 +121,15 @@ readxl::read_excel("../data/edu_comp_es.xlsx") |>
 
 ```{r teaching-experience}
 readxl::read_excel("../data/teaching-experience_es.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Experiencia en Investigación
+
+```{r research-experience}
+readxl::read_excel("../data/research-experience_es.xlsx") |>
   tidyr::fill(-why) |>
   vitae::detailed_entries(what, when, with, where, why,
                           .protect = FALSE)

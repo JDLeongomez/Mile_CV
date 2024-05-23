@@ -67,19 +67,19 @@ Psychologist, Master in Basic and Applied Neurosciences and PhD in Neurosciences
 \begin{cvskills}
   \cvskill
     {Programming}
-    {\href{https://www.r-project.org/}{\textbf{R}} (advanced: all data wrangling, analysis, plots and tables —and even this CV— made in R)}
-
-  \cvskill
-    {Reproducible Reports}
-    {Markdown/\href{https://rmarkdown.rstudio.com/}{R Markdown} (including {\fontfamily{cmr}\selectfont\LaTeX} and HTML\faHtml5). Version control: \href{https://git-scm.com/}{Git} \faGit* and \href{https://github.com/JDLeongomez}{GitHub} \faGithub}
+    {\href{https://www.r-project.org/}{\textbf{R}} (Basic, data analysis and graph generation)}
 
   \cvskill
     {Quantitative Research}
-    {General and generalised models, linear mixed-effects models, multi-model inference, machine learning}
+    {Observational-correlational studies, Simple and Mixed general linear models}
+  
+  \cvskill
+    {Recording techniques}
+    {Eye tracking (mainly), other basic HRV, EEG}
 
   \cvskill
     {Software}
-    {\href{https://posit.co/products/open-source/rstudio/}{RStudio}, \href{https://code.visualstudio.com/}{Visual Studio Code}, \href{https://www.fon.hum.uva.nl/praat/}{Praat}, \href{https://www.audacityteam.org/}{Audacity}, \href{https://inkscape.org/}{InkScape}, \href{https://www.zotero.org/}{Zotero}}
+    {RStudio, Tobii Pro Lab, Qualtrics, Psychomorph, WebmorphR, Mendeley and Zotero}
 
   \cvskill
     {Languages}
@@ -91,11 +91,11 @@ Psychologist, Master in Basic and Applied Neurosciences and PhD in Neurosciences
 \begin{cvskills}
   \cvskill
     {Research Areas}
-    {\textbf{Human voice • Vocal modulation • Mate choice • Human behaviour}}
+    {\textbf{Human sexual response • Typical and atypical sexual preferences • Pedohebephilia • Harmful sexual \newline behaviors • Mate choice • Attentional biases}}
 
   \cvskill
     {Primary Research Methods}
-    {Experimental designs • Acoustic analysis • Geometric morphometrics • Stimuli rating}
+    {Experimental designs • Free viewing \& forced stimulus choice paradigms • Psychometric scales • Subjective \newline assessment of visual stimuli}
 \end{cvskills}
 
 # Education
@@ -120,6 +120,15 @@ readxl::read_excel("../data/edu_comp_en.xlsx") |>
 
 ```{r teaching-experience}
 readxl::read_excel("../data/teaching-experience_en.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Research Experience
+
+```{r research-experience}
+readxl::read_excel("../data/research-experience_en.xlsx") |>
   tidyr::fill(-why) |>
   vitae::detailed_entries(what, when, with, where, why,
                           .protect = FALSE)
@@ -170,7 +179,7 @@ mediancit <- median(pubs$cites)
 \begin{tcolorbox}[enhanced,
         on line, 
         boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
-        colframe=white,colback=teal,
+        colframe=white,colback=violet,
         hyperurl={https://scholar.google.com/citations?user=XgNEpfgAAAAJ}]
   
 \color{white}
@@ -286,3 +295,4 @@ readxl::read_excel("../data/supervision_pre_en.xlsx") |>
   vitae::detailed_entries(what, when, with, where, why,
                           .protect = FALSE)
 ```
+

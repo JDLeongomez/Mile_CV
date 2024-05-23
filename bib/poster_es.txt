@@ -1,51 +1,21 @@
-Leongómez, J.D. (2023, agosto). *Potenciando tus conclusiones: Explorando la vital importancia del poder estadístico y el tamaño de muestra en la inferencia confiable*. Presentación invitada al XXIX Congreso Institucional de Investigaciones (Universidad El Bosque), Bogotá, Colombia. https://investigaciones.unbosque.edu.co/s/D-00730__ViceInvestigaciones__-agenda-Congreso-Institucional-links-1.pdf
+Vásquez-Amézquita, M. (2024, Abril). *Preferencias sexuales humanas: Métodos experimentales y Rastreo ocular*. Presentación invitada al Webinar organizado por Maestría en Sexualidad y Relaciones Contemporáneas (Universidad de la Costa), Barranquilla, Colombia. 
 
-Leongómez, J.D. (2023, julio). *From data to knowledge: Conducting meta-analyses of correlations and t-tests*. Taller invitado presentado en  el Summer Institute 2023 de of the International Society for Human Ethology (ISHE), Universidade Federal de Pernambuco, Recife, Brasil. https://ishe.org/wp-content/uploads/2023/07/BoA_v06_km.pdf (ver [certificado](https://jdleongomez.info/es/files/Cert_ISHE_2023.pdf))
+Vásquez-Amézquita, M. (2023, Octubre). *Descifrando la pedofilia, una perspectiva neurocognitiva*. Presentación invitada al Conversatorio Trata de personas, tráfico de NNA y pedofilia (Pontificial Universidad Javeriana), Bogotá, Colombia. 
 
-Leongómez, J.D. (2023, julio). *Ensuring reliable results: Power analysis and sample size estimation in behavioural research*. Taller invitado presentado en  el Summer Institute 2023 de of the International Society for Human Ethology (ISHE), Universidade Federal de Pernambuco, Recife, Brasil. https://ishe.org/wp-content/uploads/2023/07/BoA_v06_km.pdf  (ver [certificado](https://jdleongomez.info/es/files/Cert_ISHE_2023.pdf))
+Vásquez-Amézquita, M. (2022, Octubre). *Deseo sexual rasgo como predictor de la excitación sexual subjetiva hacia estímulos sexuales eróticos de hombres y mujeres cisgénero*. Comunicación Oral en el XX Congreso Latinoamericano de Sexología y Educación sexual (Flasses), Valencia, España.
 
-Leongómez, J.D., Havlíček, J., & Roberts, S.C. (2022, octubre). *Musicality in human vocal communication*. Artículo presentado como parte del simposio The Evolution of Human Musicality en el 4th Brazilian Meeting on Evolution of Human Behavior (Universidad de São Paulo), São Paulo, Brasil. https://youtu.be/gK_rl0r4nfs?t=9662
+Vásquez-Amézquita, M. (2021, Junio). *Tecnología Eye-Tracking aplicada a las disfunciones y desviaciones sexuales, como la pedofilia*. Conferencista invitada al Congreso Online de Tecnologías Aplicadas a la Psicología (AEPSIS - Asociación Española de Psicología Sanitaria), Valencia, España.
 
-Leongómez, J.D. (2022, octubre). *Sesión presencial de jamovi*. Taller para el Plan de formación en investigación de la Vicerrectoría de Investigaciones (Universidad El Bosque), Bogotá, Colombia.
+Vásquez-Amézquita, M. (2020, Octubre). *Aportes del Eye tracking en la identificación de preferencias sexuales desviadas como la pedofilia*. Conferencista invitada al II Congreso Internacional De Psicología Online (Conexiones Consultorías, Universidad El Bosque y ASCOFAPSI), Bogotá, Colombia.
 
-Leongómez, J.D. (2022, septiembre). *Introducción a jamovi: Alternativa moderna, gratuita y de código abierto para la realización de análisis estadísticos*. Presentación organizada como parte del Plan de formación en investigación de la Vicerrectoría de Investigaciones (Universidad El Bosque), Bogotá, Colombia. https://investigaciones.unbosque.edu.co/eventos/cuestioneseticas-jjnlm-92bkj-n249w-hbnhl-6tpj4-pm22x-8m3yh-645tt-gw59h-xwc6x-d9sgw-6fzel-hm6dd-2wrls-569m2-8zns8-rg363
+Vásquez-Amézquita, M. (2020, Septiembre 17). *Utilidad del Eye-Tracking en la Identificación de Preferencias Sexuales en Población General y Agresores Sexuales de Niños*. Conferencista invitada al IV Congreso Nacional de Psicología Jurídica (Universidad Católica de Colombia), Bogotá, Colombia.
 
-Leongómez, J.D. (2022, agosto). *Más allá del Open Access: Necesidad de una Ciencia Abierta integral para enfrentar las implicaciones de la naturalización de malas prácticas y la crisis de la replicación*. Presentación organizada como parte del Plan de formación en investigación de la Vicerrectoría de Investigaciones (Universidad El Bosque), Bogotá, Colombia. https://investigaciones.unbosque.edu.co/eventos/cuestioneseticas-jjnlm-92bkj-n249w-hbnhl-6tpj4-pm22x-8m3yh-645tt-gw59h-xwc6x-d9sgw-6fzel-hm6dd-2wrls-569m2-8zns8
+Vásquez-Amézquita, M. (2020, Septiembre 4). *¿Qué dice la mirada acerca de comportamientos sexuales desviados como la pedofilia y el abuso sexual infantil? Hallazgos de un estudio usando eye tracking*. Conferencista invitada al 3er Simposio de Neurociencia, Cognición y Sociedad (Pontificial Universidad Javeriana), Bogotá, Colombia.
 
-Leongómez, J.D. (2022, abril). *¿Qué tan confiable es la literatura científica? Ciencia abierta como estrategia para enfrentar las implicaciones de la naturalización de malas prácticas y la crisis de la replicación*. Presentación organizada por la Unidad de Investigaciones de la Facultad de Psicología (Universidad El Bosque), Bogotá, Colombia. https://youtu.be/Fl98MoBqSaI
+Vásquez-Amézquita, M. (2020, Marzo). *Contribuciones de la neurociencia cognitiva en la identificación de preferencias sexuales atípicas desviadas como la pedofilia*. Conferencista invitada a Sesión plenaria en el CSCN – Center for Social and Cognitive Neuroscience (Universidad Adolfo Ibáñez), Santiago de Chile y Viña del Mar.
 
-Leongómez, J.D. (2020, noviembre). *¿Cuántos participantes necesito? Análisis de poder estadístico y cálculo de tamaño de muestra en  R*. Taller para el Congreso Internacional de Neurociencias: Cerebro y Comportamiento en Tiempos de COVID-19 (Universidad El Bosque, Universidad de los Andes), Bogotá, Colombia. https://youtu.be/tVB9sh5ZFH0
+Vásquez-Amézquita, M. (2019, Octubre). *Factores del neurodesarrollo que contribuyen al desarrollo de la pedofilia*. Conferencista invitada a I Simposio de Neuropsicología Infantil y Neurociencias Aplicadas (Coorporación Delphy Colombia), Ibagué, Colombia.
 
-Leongómez, J.D. & Sánchez, O. R. (2019, septiembre). *Asociación entre altura y circunferencia de cintura con salud en poblaciones rurales indígenas y urbanas en América Latina*. Artículo presentado en el XXV Congreso Institucional de Investigaciones (Universidad El Bosque), Bogotá, Colombia. https://static1.squarespace.com/static/5fb667be752a000eaf4b5869/t/60454941f7f209159575a773/1615153475374/Memorias+-XXV+Congreso+2019.pdf
+Vásquez-Amézquita, M. (2018, Septiembre). *Patrón de atención visual sobre los estímulos infantiles en abusadores sexuales de niños en comparación con otros delincuentes y la comunidad en general: un estudio de seguimiento ocular*. Conferencista invitada a 4º Congresso Ordem dos Psicólogos Portugueses (Ordem Dos Psicólogos Portugueses), Braga, Portugal.
 
-Leongómez, J.D., Sánchez, O.R., Vásquez-Amézquita, M., Valderrama, E., Castellanos-Chacón, A., Morales-Sánchez, L., Nieto, J., & González-Santoyo, I. (2019, agosto). *Self-reported Health is Related to Body Height and Waist Circumference in Rural Indigenous and Urbanised Latin-American Populations*. Artículo y póster presentados en el VII Summer Institute of the International Society for Human Ethology (ISHE), Zadar, Croatia. Póster: https://jdleongomez.info/en/publication/leongomez2020/PosterA0.pdf
 
-Leongómez, J.D. (2019, juio). *Diseños Experimentales*. Taller para la Vicerrectoría de Investigaciones (Universidad El Bosque), Bogotá, Colombia.
-
-Leongómez, J.D., Murray, A.K., & Roberts, S.C. (2018, septiembre). *Contextualising courtship: Male body odour effects on vocal modulation*. Artículo presentado en el XXIV Biannual Conference for Human Ethology (ISHE), Santiago, Chile.
-
-Leongómez, J.D. (2017, septiembre). *Efectos de los niveles hormonales, masculinidad y feminidad, en la discriminación tonal de hombres y mujeres.*. Artículo presentado en el XXIII Congreso Institucional de Investigaciones (Universidad El Bosque), Bogotá, Colombia.
-
-Leongómez, J.D. (2017, agosto). *The sound of seduction: Vocal modulations and their effects during courtship*. Sesión plenaria en el 2do Simposio de Neurociencias, Cognición y Sociedad (Universidad Javeriana), Bogotá, Colombia.
-
-Leongómez, J.D. (2017, marzo). *Is the relationship between musical and linguistic processing a vestige of the evolutionary origins of music?*. Sesión plenaria en el 2017 Brain Awareness Week 2017 (Universidad El Bosque), Bogotá, Colombia.
-
-Leongómez, J.D., Mileva, V.R., Little, A.C., & Roberts, S.C. (2016, agosto). *Perceived differences in social status between speaker and listener affect the speaker’s vocal characteristics*. Artículo presentado en el XXIII Biennial Congress On Human Ethology (ISHE), Stirling, Reino Unido.
-
-Leongómez, J.D., Binter, J., Kubicová, L., Stolařová, P., Klapilová, K., Havlíček, J., & Roberts, S.C. (2014, abril). *Vocal modulation during courtship increases proceptivity even in naive listeners*. Artículo presentado en el European Human Behaviour and Evolution Association (EHBEA) Annual Meeting 2014 (University of Bristol), Bristol, Reino Unido.
-
-Leongómez, J.D., & Roberts, S.C. (2013, abril). *The sound of sweet nothings: How men and women modulate vocal parameters in speech directed towards attractive and unattractive individuals*. Presentación oral para el Mind and Brain Group (University of Stirling), Stirling, Reino Unido.
-
-Leongómez, J.D., & Roberts, S.C. (2013, marzo). *The sound of sweet nothings: How men and women modulate vocal parameters in speech directed towards attractive and unattractive individuals*. Póster presentado en el European Human Behaviour and Evolution Association (EHBEA) Annual Meeting 2013 (VU University Amsterdam), Amsterdam, Netherlands.
-
-Leongómez, J.D. (2013, marzo). *Voice research techniques using Praat*. Taller en la Facultad de Humanidades (Charles University), Praga, República Checa.
-
-Leongómez, J.D. (2013, marzo). *Acoustic Communication*. Presentación oral en el Centre for Theoretical Study, Praga, República Checa.
-
-Leongómez, J.D., & Roberts, S.C. (2012, mayo). *The sound of sweet nothings: How men and women modulate vocal parameters in speech directed towards attractive and unattractive individuals*. Presentación oral para el Group of Human Ethology (Charles University), Praga, República Checa.
-
-Leongómez, J.D. (2013, marzo). *Voice research techniques using Praat*. Taller en Scottish Universities Psychology Postgraduate Research Training – SUPPORT (University of Stirling), Stirling, Reino Unido.
-
-Leongómez, J.D., & Roberts, S.C. (2011, febrero). *The sound of sweet nothings: How men and women modulate vocal parameters in speech directed towards attractive and unattractive individuals*. Presentación para el Behaviour and Evolution Research Group (University of Stirling), Stirling, Reino Unido.
-
-Leongómez, J.D., & Roberts, S.C. (2010, diciembre). *Context-dependant modulation of vocal parameters*. Póster presentado en el Language of Music, the Music of Language; Meeting 2: Entrainment/Meaning (Centre for Music & Science, University of Cambridge), Cambridge, Reino Unido.

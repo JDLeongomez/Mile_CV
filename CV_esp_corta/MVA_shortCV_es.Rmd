@@ -67,23 +67,23 @@ Psicóloga, Máster en Neurociencias Básicas y Aplicadas y Doctora en Neurocien
 \begin{cvskills}
   \cvskill
     {Programación}
-    {\href{https://www.r-project.org/}{\textbf{R}} (avanzado: todo el procesamiento de datos, análisis, diagramas y tablas —e incluso esta HV— hechos en R)}
+    {\href{https://www.r-project.org/}{\textbf{R}} (Básico, análisis de datos y generación de gráficos)}
 
   \cvskill
-    {Informes reproducibles}
-    {Markdown/\href{https://rmarkdown.rstudio.com/}{R Markdown} (incluyendo código  \href{https://www.latex-project.org/}{{\fontfamily{cmr}\selectfont\LaTeX}} y \href{https://html.spec.whatwg.org/}{HTML}\faHtml5). Control de versiones: \href{https://git-scm.com/}{Git} \faGit* y \href{https://github.com/JDLeongomez}{GitHub} \faGithub}
-
+    {Investigación cuantitativa}
+    {Estudios observacionales-correlacionales, Modelos lineales generales simples y mixtos}
+  
   \cvskill
-    {Investigación Cuantitativa}
-    {Modelado estadístico, modelos de efectos mixtos, inferencia multimodelo, \textit{machine learning}}
+    {Técnicas de registro}
+    {Rastreo Ocular (principalmente), otras básicas HRV, EEG}
 
   \cvskill
     {Software}
-    {\href{https://posit.co/products/open-source/rstudio/}{RStudio}, \href{https://code.visualstudio.com/}{Visual Studio Code}, \href{https://www.fon.hum.uva.nl/praat/}{Praat}, \href{https://www.audacityteam.org/}{Audacity}, \href{https://inkscape.org/}{InkScape}, \href{https://www.zotero.org/}{Zotero}}
+    {RStudio, Tobii Pro Lab, Qualtrics, Psychomorph, WebmorphR, Mendeley y Zotero}
 
   \cvskill
-    {Idiomas}
-    {Inglés/Español}
+    {Languages}
+    {Español/Inglés}
 \end{cvskills}
 
 # Educación
@@ -95,9 +95,18 @@ readxl::read_excel("../data/education_esp_S.xlsx") |>
                           .protect = FALSE)
 ```
 
+# Experiencia en Investigación
+
+```{r research-experience}
+readxl::read_excel("../data/research-experience_esp_S.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
 # Experiencia Académica y Profesional
 
-Para una lista completa y descripción detallada, por favor consulta mi [sitio web](https://jdleongomez.info/es/profile/#experience) o mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
+Para una lista completa y descripción detallada, por favor consulta mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
 
 ```{r working-experience}
 readxl::read_excel("../data/working-experience_esp_S.xlsx") |>
@@ -108,7 +117,7 @@ readxl::read_excel("../data/working-experience_esp_S.xlsx") |>
 
 # Logros
 
-Para información sobre **subvenciones**, **becas** y **premios**, por favor visita mi [sitio web](https://jdleongomez.info/es/profile/#accomplishments) o mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
+Para información sobre **subvenciones**, **becas** y **premios**, por favor visita mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
 
 # Publicaciones Seleccionadas
 
@@ -148,7 +157,7 @@ citSum <- profile$total_cites
 \end{minipage}
 \end{tcolorbox}
 
-Para una lista completa, por favor visita la sección de publicaciones en mi [sitio web](https://jdleongomez.info/es/publication/) o mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
+Para una lista completa, por favor visita la sección de publicaciones en mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
 
 \begingroup
 \setlength{\parindent}{-0.5in}
@@ -158,13 +167,9 @@ Para una lista completa, por favor visita la sección de publicaciones en mi [si
 
 \endgroup
 
-\begin{footnotesize}
-\textbf{Nota:} Autor de correspondencia en todas las publicaciones listadas en esta sección.
-\end{footnotesize}
-
 # Supervisión de Posgrado
 
-Para una lista completa, incluyendo la supervisión de pregrado, por favor visita mi [sitio web](https://jdleongomez.info/es/team/) o mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
+Para una lista completa, incluyendo la supervisión de pregrado, por favor visita mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
 
 ```{r supervision}
 readxl::read_excel("../data/supervision_esp_S.xlsx") |>
@@ -172,8 +177,3 @@ readxl::read_excel("../data/supervision_esp_S.xlsx") |>
   vitae::detailed_entries(what, when, with, where, why,
                           .protect = FALSE)
 ```
-
-# Roles Editoriales
-
-Soy [recomendador](https://rr.peercommunityin.org/about/recommenders) (editor) de [Peer Community In Registered Reports](https://rr.peercommunityin.org/) y recientemente fui editor invitado de un número temático en dos partes de [Philosophical Transactions B](https://royalsocietypublishing.org/journal/rstb) ([Parte 1](https://royalsocietypublishing.org/toc/rstb/2021/376/1840), [Parte 2](https://royalsocietypublishing.org/toc/rstb/2022/377/1841)). Regularmente soy par revisor de distintas revistas, incluyendo [Proceedings of the Royal Society B: Biological Sciences](https://royalsocietypublishing.org/journal/rspb), [Royal Society Open Science](https://royalsocietypublishing.org/journal/rsos), [PLOS ONE](https://journals.plos.org/plosone/), [Evolution and Human Behavior](https://www.sciencedirect.com/journal/evolution-and-human-behavior), [Scientific Reports](https://www.nature.com/srep/), [Basic and Applied Social Psychology](https://www.tandfonline.com/toc/hbas20/current), [Cortex](https://www.journals.elsevier.com/cortex), [Perception](https://journals.sagepub.com/home/pec),
-[Evolutionary Psychology](https://journals.sagepub.com/home/evp), y [Frontiers in Psychology](https://www.frontiersin.org/journals/psychology) donde soy [Review Editor](https://loop.frontiersin.org/people/438954/overview) para la [\textit{Sección especializada en Psicología Evolutiva}](https://www.frontiersin.org/journals/psychology/sections/evolutionary-psychology).  Mi registro verificado se puede ver en mi perfil de [Web of Science](https://www.webofscience.com/wos/author/record/387716).

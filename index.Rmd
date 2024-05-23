@@ -26,8 +26,8 @@ ______________________
 
 In this page, you can see or download either my full, academic CV, or a short, 2-page short CV.
 
-* [Academic CV](https://jdleongomez.github.io/JDL_CV/CV_eng/JDL_CV_en.pdf)
-* [Short CV](https://jdleongomez.github.io/JDL_CV/CV_eng_corta/JDL_shortCV_en.pdf) (2 pages)
+* [Academic CV](https://jdleongomez.github.io/Mile_CV/CV_eng/MVA_CV_en.pdf)
+* [Short CV](https://jdleongomez.github.io/Mile_CV/CV_eng_corta/MVA_shortCV_en.pdf) (2 pages)
 
 ______________________
  
@@ -39,11 +39,11 @@ ______________________
 
 En esta página, puedes ver o descargar tanto mi hoja de vida académica, o una hoja de vida resumida de 2 páginas:
 
-* [Hoja de vida académica](https://jdleongomez.github.io/JDL_CV/CV_esp/JDL_CV_es.pdf)
-* [Hoja de vida resumida](https://jdleongomez.github.io/JDL_CV/CV_esp_corta/JDL_shortCV_es.pdf) (2 páginas) 
+* [Hoja de vida académica](https://jdleongomez.github.io/Mile_CV/CV_esp/MVA_CV_es.pdf)
+* [Hoja de vida resumida](https://jdleongomez.github.io/Mile_CV/CV_esp_corta/MVA_shortCV_es.pdf) (2 páginas) 
 
 ______________________
 
-***Nota:*** El repositorio con el código para crear esta HV está disponible en [GitHub `r fontawesome::fa(name = "github")`](https://github.com/xxxx/CV)
+***Nota:*** El repositorio con el código para crear esta HV está disponible en [GitHub `r fontawesome::fa(name = "github")`](https://github.com/JDLeongomez/Mile_CV)
 
 ______________________
