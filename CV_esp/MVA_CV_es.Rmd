@@ -277,8 +277,6 @@ readxl::read_excel("../data/event_es.xlsx") |>
 
 ## \textbf{Posgrado}
 
-La Facultad de Psicología de la Universidad El Bosque no ofrece títulos de investigación, y todos los cursos de nivel de maestrías son profesionales. Debido a esto, las oportunidades de supervisar a estudiantes de posgrado son limitadas, y la mayor parte de mi supervisión de posgrado ha sido externa.
-
 ```{r supervision-pos}
 readxl::read_excel("../data/supervision_pos_es.xlsx") |>
   tidyr::fill(-why) |>
@@ -287,8 +285,6 @@ readxl::read_excel("../data/supervision_pos_es.xlsx") |>
 ```
 
 ## \textbf{Pregrado}
-
-Los estudiantes universitarios supervisados que figuran a continuación proceden de distintas universidades y programas académicos. Esta lista sólo incluye a los estudiantes de quienes fui supervisor principal u obtuvieron mención a trabajo de grado meritorio. Adicionalmente, actualmente estoy supervisando seis estudiantes como supervisor principal, y he supervisado a más de 25 estudiantes como co-supervisor.
 
 ```{r supervision-pre}
 readxl::read_excel("../data/supervision_pre_es.xlsx") |>

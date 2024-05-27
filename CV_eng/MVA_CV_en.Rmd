@@ -276,8 +276,6 @@ readxl::read_excel("../data/event_en.xlsx") |>
 
 ## \textbf{Postgraduate}
 
-The Faculty of Psychology at Universidad El Bosque does not offer research degrees, and all M-level courses are professional masters. Because of this, opportunities to supervise postgraduate students are limited, and most of my postgraduate supervision has been external.
-
 ```{r supervision}
 readxl::read_excel("../data/supervision_pos_en.xlsx") |>
   tidyr::fill(-why) |>
@@ -286,8 +284,6 @@ readxl::read_excel("../data/supervision_pos_en.xlsx") |>
 ```
 
 ## \textbf{Undergraduate}
-
-The supervised undergraduate students listed below come from different universities and academic programmes. This list only includes students for whom I was the main supervisor or who were awarded honours degrees. Additionally, I am currently supervising six students as a principal supervisor, and have supervised over 25 students as a co-supervisor.
 
 ```{r supervision-pre}
 readxl::read_excel("../data/supervision_pre_en.xlsx") |>
