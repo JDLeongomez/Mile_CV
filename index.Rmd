@@ -24,7 +24,7 @@ ______________________
 
 ### English
 
-In this page, you can see or download either my full, academic CV, or a short, 2-page short CV.
+On this page, you can view or download my full academic CV, as well as shorter 2- or 3-page versions:
 
 * [Academic CV](https://jdleongomez.github.io/Mile_CV/CV_eng/MVA_CV_en.pdf)
 * [Abbreviated CV](https://jdleongomez.github.io/Mile_CV/CV_eng_abbreviated/MVA_abbrCV_en.pdf) (3 pages)
@@ -38,7 +38,7 @@ ______________________
 
 ### Español
 
-En esta página, puedes ver o descargar tanto mi hoja de vida académica, o una hoja de vida resumida de 2 páginas:
+En esta página, puedes ver o descargar tanto mi hoja de vida académica, como versiones más breves de 2 o 3 páginas:
 
 * [Hoja de vida académica](https://jdleongomez.github.io/Mile_CV/CV_esp/MVA_CV_es.pdf)
 * [Hoja de vida abreviada](https://jdleongomez.github.io/Mile_CV/CV_esp_abreviada/MVA_abbrCV_es.pdf) (3 páginas) 
