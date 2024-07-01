@@ -1,0 +1,194 @@
+---
+graphics: yes
+name: Milena
+surname: Vásquez-Amézquita
+position: "Profesora Asociada"
+address: "Facultad de Psicología, Universidad El Bosque"
+phone: (+57) 601-6489000 Ext. 1605
+email: "mvasquezam@unbosque.edu.co"
+www: grupo-codec.netlify.app/author/milena-vasquez-amezquita/
+orcid: 0000-0001-7317-8430
+googlescholar: XgNEpfgAAAAJ
+researchgate: Milena-Vasquez-Amezquita
+profilepic: "../images/MVA.jpg"
+aboutme: |
+  Soy una investigadora interesada principalmente en las bases neurocognitivas del afecto y la sexualidad humana.
+date: "`r Sys.setlocale('LC_TIME','es_CO.UTF-8');format(Sys.Date(),'%d de %B de %Y')`"
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa-cv.csl"
+headcolor: 6767C7
+docname: Hoja de Vida Abreviada
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+pkgs <- c('vitae' ,'here' ,'tinytex' ,'tibble' ,'glue' ,'rmarkdown' ,'dplyr', 'readr' ,'yaml')
+xfun::pkg_attach2(pkgs)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data sctructure for tribbles
+             ,'magrittr'  # The Pipe |>
+             ,'here'      # Relative Filepaths
+             ,'readr'     # Data Loading
+             ,'tidyverse' # Needed for bind_rows and whatever
+             ,'scholar'   # Updating publications from google scholar
+             ,'kableExtra'# Adding technicalskills table
+            )
+
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# Packages loading
+lapply(packages, library, character.only = TRUE) |>
+  invisible()
+```
+
+# Acerca de mí
+
+```{r experiencia, echo = FALSE}
+t.experiencia <- floor(year(Sys.time())-year(as.Date('01/01/09',format='%d/%m/%y')) - 1.5)
+```
+
+\begin{minipage}[c]{0.85\linewidth}
+Psicóloga, Máster en Neurociencias Básicas y Aplicadas y Doctora en Neurociencias. Investigadora asociada activa dentro del grupo \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Ciencias Cognitivas y del Comportamiento}} (clasificación  \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} en MinCiencias). Profesora Asociada en el \href{https://grupo-codec.netlify.app/labpsiexp/}{\textbf{Laboratorio de Psicología Experimental}} de la \href{https://www.uelbosque.edu.co/psicologia}{Facultad de Psicología} de la \href{https://www.uelbosque.edu.co/}{Universidad El Bosque}. Estancia Postdoctoral en la \href{https://www.cuc.edu.co/}{Universidad de la Costa} con financiación de \href{https://minciencias.gov.co/}{MinCiencias}, Colombia. Me dedico principalmente a la investigación científica formativa y propiamente dicha. He sido directora y codirectora de proyectos de investigación exitosos desde una metodología experimental en neurociencia cognitivo-afectiva con financiación interna y externa, y actualmente dirijo el semillero de investigación \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: sexualidad y afectividad desde una perspectiva neurocognitiva}}. Tengo experiencia profesional y en docencia universitaria de `r t.experiencia` años, aplicada al desarrollo e implementación de programas de pregrado y posgrado de educación superior relacionados con las bases neurobiológicas y cognitivas del comportamiento humano y he sido tutora y cotutora de trabajos de grado en niveles de pregrado, maestría y doctorado.
+\end{minipage} \begin{minipage}[c]{0.15\linewidth}
+\begin{flushright} 
+\hfill \href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_SEXCOG.png}} \newline \href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_CODEC.png}}
+\end{flushright}
+\end{minipage}
+
+# Habilidades
+
+\begin{cvskills}
+  \cvskill
+    {Programación}
+    {\href{https://www.r-project.org/}{\textbf{R}} (Básico, análisis de datos y generación de gráficos)}
+
+  \cvskill
+    {Investigación cuantitativa}
+    {Estudios observacionales-correlacionales, Modelos lineales generales simples y mixtos}
+  
+  \cvskill
+    {Técnicas de registro}
+    {Rastreo Ocular (principalmente), otras básicas HRV, EEG}
+
+  \cvskill
+    {Software}
+    {RStudio, Tobii Pro Lab, Qualtrics, Psychomorph, WebmorphR, Mendeley y Zotero}
+
+  \cvskill
+    {Languages}
+    {Español/Inglés}
+\end{cvskills}
+
+# Educación
+
+```{r education}
+readxl::read_excel("../data/education_esp_S.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Experiencia en Investigación
+
+```{r research-experience}
+readxl::read_excel("../data/research-experience_esp_S.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Experiencia Académica y Profesional
+
+Para una lista completa y descripción detallada, por favor consulta mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
+
+```{r working-experience}
+readxl::read_excel("../data/working-experience_esp_S.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Subvenciones
+
+```{r grant}
+readxl::read_excel("../data/grant_es.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Becas, Premios y Honores
+
+```{r award}
+readxl::read_excel("../data/award_es.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
+
+# Publicaciones Seleccionadas
+
+```{r scholar, echo = FALSE}
+profile <- get_profile("XgNEpfgAAAAJ")
+pubs <- get_publications("XgNEpfgAAAAJ")
+
+h_index <- profile$h_index
+g_index <- max(which(as.numeric(row.names(pubs))^2 < cumsum(pubs$cites)))
+i10_index <- profile$i10_index
+pubs_num <- dim(pubs)[1]
+citSum <- profile$total_cites
+```
+
+\begin{tcolorbox}[enhanced,
+        on line, 
+        boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
+        colframe=white,colback=violet,
+        hyperurl={https://scholar.google.com/citations?user=XgNEpfgAAAAJ}]
+  
+\color{white}
+\begin{minipage}[c]{0.195\linewidth}
+  \begin{center} \begin{huge} `r h_index` \end{huge}
+  \begin{small} Índice \textit{h} \end{small} \end{center} 
+\end{minipage} \begin{minipage}[c]{0.195\linewidth}
+  \begin{center} \begin{huge} `r g_index` \end{huge}
+  \begin{small} Índice \textit{g} \end{small} \end{center}
+\end{minipage} \begin{minipage}[c]{0.195\linewidth}
+  \begin{center} \begin{huge} `r i10_index` \end{huge}
+  \begin{small} Índice i10 \end{small} \end{center}
+\end{minipage} \begin{minipage}[c]{0.195\linewidth}
+  \begin{center} \begin{huge} `r pubs_num` \end{huge}
+  \begin{small} Publicaciones \end{small} \end{center}
+\end{minipage} \begin{minipage}[c]{0.195\linewidth}  
+  \begin{center} \begin{huge} `r citSum` \end{huge} 
+  \begin{small} Citas \end{small} \end{center}
+\end{minipage}
+\end{tcolorbox}
+
+Para una lista completa, por favor visita la sección de publicaciones en mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
+
+\begingroup
+\footnotesize
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+`r knitr::knit_child("../bib/featured.txt")`
+
+\endgroup
+
+# Supervisión de Posgrado
+
+Para una lista completa, incluyendo la supervisión de pregrado, por favor visita mi [Hoja de Vida Académica](https://jdleongomez.info/es/files/MVA_CV_es.pdf).
+
+```{r supervision}
+readxl::read_excel("../data/supervision_esp_S.xlsx") |>
+  tidyr::fill(-why) |>
+  vitae::detailed_entries(what, when, with, where, why,
+                          .protect = FALSE)
+```
