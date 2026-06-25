@@ -8,7 +8,7 @@ phone: (+57) 601-6489000 Ext. 1605
 email: "mvasquezam@unbosque.edu.co"
 www: grupo-codec.netlify.app/author/milena-vasquez-amezquita/
 orcid: 0000-0001-7317-8430
-googlescholar: XgNEpfgAAAAJ
+googlescholar: X58RxbIAAAAJ
 researchgate: Milena-Vasquez-Amezquita
 profilepic: "../images/MVA.jpg"
 aboutme: |
@@ -56,7 +56,9 @@ t.experiencia <- floor(year(Sys.time())-year(as.Date('01/01/09',format='%d/%m/%y
 
 \begin{minipage}[c]{0.85\linewidth}
 Psychologist, MSc in Basic and Applied Neurosciences, and PhD in Neurosciences. I am a researcher in cognitive neuroscience applied to human sexual behavior. My research integrates cognitive neuroscience, evolutionary psychology, and public health to understand how the brain processes sexually relevant information and how these mechanisms shape sexual attraction, mate preferences, sexual response, and sexual behavior. Using experimental methods—particularly eye tracking—I investigate both normative and atypical sexual interests, with the goal of advancing basic science and informing evidence-based strategies for the prevention of child sexual abuse and exploitation.
+
 I am an Associate Professor at the \href{https://www.uelbosque.edu.co/psicologia}{Faculty of Psychology} at \href{https://www.uelbosque.edu.co/}{Universidad El Bosque} and an active associate researcher within the \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Cognitive and Behavioural Sciences}} Research Group (classified \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} by MinCiencias). I lead the \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: Sexuality and Affectivity from a Neurocognitive Perspective}} research hotbed and have led and co-led internally and externally funded research projects using experimental approaches in cognitive neuroscience. I completed a postdoctoral fellowship at \href{https://www.cuc.edu.co/}{Universidad de la Costa}, funded by \href{https://minciencias.gov.co/}{MinCiencias}.
+
 Over the past `r t.experiencia` years, I have combined research and university teaching, contributing to undergraduate and graduate education in the neurobiological and cognitive bases of human behavior while supervising undergraduate, master's, and doctoral research projects.
 \end{minipage}
 
@@ -90,11 +92,11 @@ Over the past `r t.experiencia` years, I have combined research and university t
 
   \cvskill
     {Research Areas}
-    {\textbf{Cognitive neuroscience of human sexual behavior • Sexual attraction \& response • Evolutionary psychology of mate choice • Atypical sexual interests • Prevention of child sexual abuse \& online child sexual exploitation}}
+    {\textbf{Cognitive neuroscience of human sexual behavior • Neurocognitive mechanisms of sexual attraction \& sexual response • Evolutionary psychology of mate choice • Neurocognitive mechanisms of atypical sexual interests • Prevention of child sexual abuse \& online child sexual exploitation • Eye tracking \& visual attention}}
 
   \cvskill
     {Primary Research Methods}
-    {Eye tracking • Experimental cognitive neuroscience • Free-viewing \& forced-choice paradigms • Facial stimulus manipulation (Psychomorph) • Psychophysiological measures • Psychometric assessment • Quantitative data analysis}
+    {Eye tracking • Experimental cognitive neuroscience • Free-viewing \& forced-choice paradigms • Facial stimulus manipulation (Psychomorph) • Psychometric assessment • Psychophysiological measures • Quantitative data analysis}
 
 \end{cvskills}
 
@@ -164,23 +166,58 @@ readxl::read_excel("../data/award_en.xlsx") |>
 # Publications
 
 ```{r scholar, echo = FALSE}
-profile <- get_profile("XgNEpfgAAAAJ")
-pubs <- get_publications("XgNEpfgAAAAJ")
+scholar_id <- "X58RxbIAAAAJ"
+cache_file <- "../scholar_cache.rds"
 
-h_index <- profile$h_index
-g_index <- max(which(as.numeric(row.names(pubs))^2 < cumsum(pubs$cites)))
-i10_index <- profile$i10_index
-pubs_num <- dim(pubs)[1]
-citSum <- profile$total_cites
-meancit <- round(mean(pubs$cites), 2)
-mediancit <- median(pubs$cites)
+if (isTRUE(getOption("mva_scholar_cache_only"))) {
+  scholar_data <- if (file.exists(cache_file)) readRDS(cache_file) else NULL
+} else {
+  scholar_data <- tryCatch({
+    data <- list(
+      profile = get_profile(scholar_id),
+      pubs    = get_publications(scholar_id)
+    )
+    saveRDS(data, cache_file)
+    data
+  }, error = function(e) {
+    message("Scholar fetch failed: ", conditionMessage(e))
+    if (file.exists(cache_file)) {
+      message("Loading cached Scholar data.")
+      readRDS(cache_file)
+    } else {
+      message("No cache available. Citation metrics will show NA.")
+      NULL
+    }
+  })
+}
+
+if (!is.null(scholar_data) && is.list(scholar_data$profile)) {
+  profile   <- scholar_data$profile
+  h_index   <- profile$h_index
+  i10_index <- profile$i10_index
+  citSum    <- profile$total_cites
+  if (!is.null(scholar_data$pubs) && nrow(scholar_data$pubs) > 0) {
+    pubs      <- scholar_data$pubs
+    g_index   <- max(which(as.numeric(row.names(pubs))^2 < cumsum(pubs$cites)))
+    pubs_num  <- dim(pubs)[1]
+    meancit   <- round(mean(pubs$cites), 2)
+    mediancit <- median(pubs$cites)
+  } else {
+    g_index   <- if (!is.null(profile$g_index))   profile$g_index   else NA
+    pubs_num  <- if (!is.null(profile$pubs_num))  profile$pubs_num  else NA
+    meancit   <- if (!is.null(profile$meancit))   profile$meancit   else NA
+    mediancit <- if (!is.null(profile$mediancit)) profile$mediancit else NA
+  }
+} else {
+  h_index <- g_index <- i10_index <- pubs_num <- citSum <- meancit <- mediancit <- NA
+}
 ```
 
 \begin{tcolorbox}[enhanced,
         on line, 
         boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
         colframe=white,colback=violet,
-        hyperurl={https://scholar.google.com/citations?user=XgNEpfgAAAAJ}]
+        hyperurl={https://scholar.google.com/citations?user=X58RxbIAAAAJ}]
   
 \color{white}
   \begin{minipage}[c]{0.245\linewidth}

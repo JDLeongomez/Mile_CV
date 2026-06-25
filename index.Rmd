@@ -18,7 +18,7 @@ a:link {
 }
 ```
 
-[`r icon_style(icons::academicons("orcid"), scale = 2,  fill = "violet")`](https://orcid.org/0000-0001-7317-8430)   [`r icon_style(icons::academicons("google-scholar"), scale = 2,  fill = "violet")`](https://scholar.google.co.uk/citations?user=XgNEpfgAAAAJ)   [`r icon_style(icons::academicons("researchgate"), scale = 2.5,  fill = "violet")`](https://www.researchgate.net/profile/Milena-Vasquez-Amezquita)
+[`r icon_style(icons::academicons("orcid"), scale = 2,  fill = "violet")`](https://orcid.org/0000-0001-7317-8430)   [`r icon_style(icons::academicons("google-scholar"), scale = 2,  fill = "violet")`](https://scholar.google.co.uk/citations?user=X58RxbIAAAAJ)   [`r icon_style(icons::academicons("researchgate"), scale = 2.5,  fill = "violet")`](https://www.researchgate.net/profile/Milena-Vasquez-Amezquita)
 
 ______________________
 

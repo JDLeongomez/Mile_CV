@@ -8,7 +8,7 @@ phone: (+57) 601-6489000 Ext. 1605
 email: "mvasquezam@unbosque.edu.co"
 www: grupo-codec.netlify.app/author/milena-vasquez-amezquita/
 orcid: 0000-0001-7317-8430
-googlescholar: XgNEpfgAAAAJ
+googlescholar: X58RxbIAAAAJ
 researchgate: Milena-Vasquez-Amezquita
 profilepic: "../images/MVA.jpg"
 aboutme: |
@@ -55,7 +55,11 @@ t.experiencia <- floor(year(Sys.time())-year(as.Date('01/01/09',format='%d/%m/%y
 ```
 
 \begin{minipage}[c]{0.85\linewidth}
-Psicóloga, Máster en Neurociencias Básicas y Aplicadas y Doctora en Neurociencias. Investigadora asociada activa dentro del grupo \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Ciencias Cognitivas y del Comportamiento}} (clasificación  \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} en MinCiencias). Profesora Asociada en el \href{https://grupo-codec.netlify.app/labpsiexp/}{\textbf{Laboratorio de Psicología Experimental}} de la \href{https://www.uelbosque.edu.co/psicologia}{Facultad de Psicología} de la \href{https://www.uelbosque.edu.co/}{Universidad El Bosque}. Estancia Postdoctoral en la \href{https://www.cuc.edu.co/}{Universidad de la Costa} con financiación de \href{https://minciencias.gov.co/}{MinCiencias}, Colombia. Me dedico principalmente a la investigación científica formativa y propiamente dicha. He sido directora y codirectora de proyectos de investigación exitosos desde una metodología experimental en neurociencia cognitivo-afectiva con financiación interna y externa, y actualmente dirijo el semillero de investigación \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: sexualidad y afectividad desde una perspectiva neurocognitiva}}. Tengo experiencia profesional y en docencia universitaria de `r t.experiencia` años, aplicada al desarrollo e implementación de programas de pregrado y posgrado de educación superior relacionados con las bases neurobiológicas y cognitivas del comportamiento humano y he sido tutora y cotutora de trabajos de grado en niveles de pregrado, maestría y doctorado.
+Psicóloga, Máster en Neurociencias Básicas y Aplicadas y Doctora en Neurociencias. Soy investigadora en neurociencia cognitiva aplicada al comportamiento sexual humano. Mi investigación integra la neurociencia cognitiva, la psicología evolutiva y la salud pública para comprender cómo el cerebro procesa la información sexualmente relevante y cómo estos mecanismos configuran la atracción sexual, las preferencias de pareja, la respuesta sexual y el comportamiento sexual. Mediante métodos experimentales —en particular el rastreo ocular— investigo tanto los intereses sexuales normativos como los atípicos, con el objetivo de avanzar en la ciencia básica e informar estrategias basadas en evidencia para la prevención del abuso y la explotación sexual infantil.
+
+Soy Profesora Asociada en la \href{https://www.uelbosque.edu.co/psicologia}{Facultad de Psicología} de la \href{https://www.uelbosque.edu.co/}{Universidad El Bosque} e investigadora asociada activa dentro del grupo \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Ciencias Cognitivas y del Comportamiento}} (clasificado \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} por MinCiencias). Dirijo el semillero de investigación \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: Sexualidad y Afectividad desde una Perspectiva Neurocognitiva}} y he sido directora y codirectora de proyectos de investigación con financiación interna y externa desde una metodología experimental en neurociencia cognitiva. Realicé una estancia postdoctoral en la \href{https://www.cuc.edu.co/}{Universidad de la Costa}, con financiación de \href{https://minciencias.gov.co/}{MinCiencias}.
+
+Durante los últimos `r t.experiencia` años, he combinado la investigación con la docencia universitaria, contribuyendo a la formación de pregrado y posgrado en las bases neurobiológicas y cognitivas del comportamiento humano, y siendo tutora y cotutora de trabajos de grado en niveles de pregrado, maestría y doctorado.
 \end{minipage} \begin{minipage}[c]{0.15\linewidth}
 \begin{flushright} 
 \hfill \href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_SEXCOG.png}} \newline \href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_CODEC.png}}
@@ -136,21 +140,54 @@ readxl::read_excel("../data/award_es.xlsx") |>
 # Publicaciones Seleccionadas
 
 ```{r scholar, echo = FALSE}
-profile <- get_profile("XgNEpfgAAAAJ")
-pubs <- get_publications("XgNEpfgAAAAJ")
+scholar_id <- "X58RxbIAAAAJ"
+cache_file <- "../scholar_cache.rds"
 
-h_index <- profile$h_index
-g_index <- max(which(as.numeric(row.names(pubs))^2 < cumsum(pubs$cites)))
-i10_index <- profile$i10_index
-pubs_num <- dim(pubs)[1]
-citSum <- profile$total_cites
+if (isTRUE(getOption("mva_scholar_cache_only"))) {
+  scholar_data <- if (file.exists(cache_file)) readRDS(cache_file) else NULL
+} else {
+  scholar_data <- tryCatch({
+    data <- list(
+      profile = get_profile(scholar_id),
+      pubs    = get_publications(scholar_id)
+    )
+    saveRDS(data, cache_file)
+    data
+  }, error = function(e) {
+    message("Scholar fetch failed: ", conditionMessage(e))
+    if (file.exists(cache_file)) {
+      message("Loading cached Scholar data.")
+      readRDS(cache_file)
+    } else {
+      message("No cache available. Citation metrics will show NA.")
+      NULL
+    }
+  })
+}
+
+if (!is.null(scholar_data) && is.list(scholar_data$profile)) {
+  profile   <- scholar_data$profile
+  h_index   <- profile$h_index
+  i10_index <- profile$i10_index
+  citSum    <- profile$total_cites
+  if (!is.null(scholar_data$pubs) && nrow(scholar_data$pubs) > 0) {
+    pubs     <- scholar_data$pubs
+    g_index  <- max(which(as.numeric(row.names(pubs))^2 < cumsum(pubs$cites)))
+    pubs_num <- dim(pubs)[1]
+  } else {
+    g_index  <- if (!is.null(profile$g_index))  profile$g_index  else NA
+    pubs_num <- if (!is.null(profile$pubs_num)) profile$pubs_num else NA
+  }
+} else {
+  h_index <- g_index <- i10_index <- pubs_num <- citSum <- NA
+}
 ```
 
 \begin{tcolorbox}[enhanced,
         on line, 
         boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
         colframe=white,colback=violet,
-        hyperurl={https://scholar.google.com/citations?user=XgNEpfgAAAAJ}]
+        hyperurl={https://scholar.google.com/citations?user=X58RxbIAAAAJ}]
   
 \color{white}
 \begin{minipage}[c]{0.195\linewidth}
