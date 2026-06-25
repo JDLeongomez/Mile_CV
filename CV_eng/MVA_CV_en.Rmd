@@ -55,11 +55,9 @@ t.experiencia <- floor(year(Sys.time())-year(as.Date('01/01/09',format='%d/%m/%y
 ```
 
 \begin{minipage}[c]{0.85\linewidth}
-Psychologist, Master in Basic and Applied Neurosciences and PhD in Neurosciences. Active associate researcher within the group \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Cognitive and Behavioural Sciences}} (classification \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} in MinCiencias). Associate Professor at the \href{https://grupo-codec.netlify.app/labpsiexp/}{\textbf{Laboratory of Experimental Psychology}} of the \href{https://www.uelbosque.edu.co/psicologia}{Faculty of Psychology} at \href{https://www.uelbosque.edu.co/}{Universidad El Bosque}. Postdoctoral stay at \href{https://www.cuc.edu.co/}{Universidad de la Costa} with funding from \href{https://minciencias.gov.co/}{MinCiencias}. I have been director and co-director of successful research projects from an experimental methodology in cognitive-affective neuroscience with internal and external funding, and I currently directing the research hotbed \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: sexuality and affectivity from a neurocognitive perspective}}. I have `r t.experiencia` years of professional and university teaching experience, applied to the development and implementation of undergraduate and postgraduate higher education programmes related to the neurobiological and cognitive bases of human behaviour, and I have supervised undergraduate, masters and doctoral degree projects.
-\end{minipage} \begin{minipage}[c]{0.15\linewidth}
-\begin{flushright} 
-\hfill \href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_SEXCOG.png}} \newline \href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_CODEC.png}}
-\end{flushright}
+Psychologist, MSc in Basic and Applied Neurosciences, and PhD in Neurosciences. I am a researcher in cognitive neuroscience applied to human sexual behavior. My research integrates cognitive neuroscience, evolutionary psychology, and public health to understand how the brain processes sexually relevant information and how these mechanisms shape sexual attraction, mate preferences, sexual response, and sexual behavior. Using experimental methods—particularly eye tracking—I investigate both normative and atypical sexual interests, with the goal of advancing basic science and informing evidence-based strategies for the prevention of child sexual abuse and exploitation.
+I am an Associate Professor at the \href{https://www.uelbosque.edu.co/psicologia}{Faculty of Psychology} at \href{https://www.uelbosque.edu.co/}{Universidad El Bosque} and an active associate researcher within the \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Cognitive and Behavioural Sciences}} Research Group (classified \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} by MinCiencias). I lead the \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: Sexuality and Affectivity from a Neurocognitive Perspective}} research hotbed and have led and co-led internally and externally funded research projects using experimental approaches in cognitive neuroscience. I completed a postdoctoral fellowship at \href{https://www.cuc.edu.co/}{Universidad de la Costa}, funded by \href{https://minciencias.gov.co/}{MinCiencias}.
+Over the past `r t.experiencia` years, I have combined research and university teaching, contributing to undergraduate and graduate education in the neurobiological and cognitive bases of human behavior while supervising undergraduate, master's, and doctoral research projects.
 \end{minipage}
 
 # Skills
@@ -89,13 +87,15 @@ Psychologist, Master in Basic and Applied Neurosciences and PhD in Neurosciences
 # Research
 
 \begin{cvskills}
+
   \cvskill
     {Research Areas}
-    {\textbf{Human sexual response • Typical and atypical sexual preferences • Pedohebephilia • Harmful sexual \newline behaviors • Mate choice • Attentional biases}}
+    {\textbf{Cognitive neuroscience of human sexual behavior • Sexual attraction \& response • Evolutionary psychology of mate choice • Atypical sexual interests • Prevention of child sexual abuse \& online child sexual exploitation}}
 
   \cvskill
     {Primary Research Methods}
-    {Experimental designs • Free viewing \& forced stimulus choice paradigms • Psychometric scales • Subjective \newline assessment of visual stimuli}
+    {Eye tracking • Experimental cognitive neuroscience • Free-viewing \& forced-choice paradigms • Facial stimulus manipulation (Psychomorph) • Psychophysiological measures • Psychometric assessment • Quantitative data analysis}
+
 \end{cvskills}
 
 # Education
@@ -291,4 +291,3 @@ readxl::read_excel("../data/supervision_pre_en.xlsx") |>
   vitae::detailed_entries(what, when, with, where, why,
                           .protect = FALSE)
 ```
-

@@ -135,7 +135,7 @@ readxl::read_excel("../data/award_en.xlsx") |>
 
 # Selected Publications
 
-```{r scholar, echo = FALSE}
+```{r scholar, echo = FALSE, eval = FALSE}
 profile <- get_profile("XgNEpfgAAAAJ")
 pubs <- get_publications("XgNEpfgAAAAJ")
 
@@ -171,7 +171,7 @@ citSum <- profile$total_cites
 \end{minipage}
 \end{tcolorbox}
 
-For a full list, please check the publications section on my [academic CV](https://jdleongomez.github.io/Mile_CV/CV_eng/MVA_CV_en.pdf). 
+For a full list, please check the publications section on my [academic CV](https://jdleongomez.github.io/Mile_CV/CV_eng/MVA_CV_en.pdf).
 
 \begingroup
 \footnotesize
