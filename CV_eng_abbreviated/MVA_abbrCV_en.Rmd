@@ -60,7 +60,8 @@ Psychologist, MSc in Basic and Applied Neurosciences, and PhD in Neurosciences. 
 I am an Associate Professor at the \href{https://www.uelbosque.edu.co/psicologia}{Faculty of Psychology} at \href{https://www.uelbosque.edu.co/}{Universidad El Bosque} and an active associate researcher within the \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Cognitive and Behavioural Sciences}} Research Group (classified \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} by MinCiencias). I lead the \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: Sexuality and Affectivity from a Neurocognitive Perspective}} research hotbed and have led and co-led internally and externally funded research projects using experimental approaches in cognitive neuroscience. I completed a postdoctoral fellowship at \href{https://www.cuc.edu.co/}{Universidad de la Costa}, funded by \href{https://minciencias.gov.co/}{MinCiencias}.
 
 Over the past `r t.experiencia` years, I have combined research and university teaching, contributing to undergraduate and graduate education in the neurobiological and cognitive bases of human behavior while supervising undergraduate, master's, and doctoral research projects.
-\end{minipage} \begin{minipage}[c]{0.15\linewidth}
+\end{minipage} 
+\begin{minipage}[c]{0.15\linewidth}
 \begin{flushright} 
 \hfill \href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_SEXCOG.png}} \newline \href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_CODEC.png}}
 \end{flushright}

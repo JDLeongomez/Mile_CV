@@ -60,7 +60,8 @@ Psicóloga, Máster en Neurociencias Básicas y Aplicadas y Doctora en Neurocien
 Soy Profesora Asociada en la \href{https://www.uelbosque.edu.co/psicologia}{Facultad de Psicología} de la \href{https://www.uelbosque.edu.co/}{Universidad El Bosque} e investigadora asociada activa dentro del grupo \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Ciencias Cognitivas y del Comportamiento}} (clasificado \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} por MinCiencias). Dirijo el semillero de investigación \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: Sexualidad y Afectividad desde una Perspectiva Neurocognitiva}} y he sido directora y codirectora de proyectos de investigación con financiación interna y externa desde una metodología experimental en neurociencia cognitiva. Realicé una estancia postdoctoral en la \href{https://www.cuc.edu.co/}{Universidad de la Costa}, con financiación de \href{https://minciencias.gov.co/}{MinCiencias}.
 
 Durante los últimos `r t.experiencia` años, he combinado la investigación con la docencia universitaria, contribuyendo a la formación de pregrado y posgrado en las bases neurobiológicas y cognitivas del comportamiento humano, y siendo tutora y cotutora de trabajos de grado en niveles de pregrado, maestría y doctorado.
-\end{minipage} \begin{minipage}[c]{0.15\linewidth}
+\end{minipage} 
+\begin{minipage}[c]{0.15\linewidth}
 \begin{flushright} 
 \hfill \href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_SEXCOG.png}} \newline \href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_CODEC.png}}
 \end{flushright}
