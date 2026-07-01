@@ -57,14 +57,14 @@ t.experiencia <- floor(year(Sys.time())-year(as.Date('01/01/09',format='%d/%m/%y
 \begin{minipage}[c]{0.85\linewidth}
 Researcher in cognitive neuroscience applied to human sexual behavior. Psychologist, MSc in Basic and Applied Neurosciences, and PhD in Neurosciences. My research integrates cognitive neuroscience, evolutionary psychology, and public health to understand how the brain processes sexually relevant information and how these mechanisms shape sexual attraction, mate preferences, sexual response, and sexual behavior. Using experimental methods—particularly eye tracking—I investigate both normative and atypical sexual interests, with the goal of contributing to both basic science and evidence-based strategies to promote sexual health and prevent child sexual abuse and exploitation.
 
-I am an Associate Professor at the \href{https://www.psicologia.unbosque.edu.co/investigacion}{Faculty of Psychology} at \href{https://www.unbosque.edu.co/}{Universidad El Bosque} and an active associate researcher within the \href{https://unbosque.portalinvestigacion.com/grupos/302}{\textit{\textbf{CODEC}: Cognitive and Behavioural Sciences}} Research Group (classified \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} by MinCiencias). I lead the \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: Sexuality and Affectivity from a Neurocognitive Perspective}} undergraduate research group and have led and co-led nationally and internationally funded research projects using experimental approaches in cognitive neuroscience. I have completed two competitive postdoctoral research fellowships funded by \href{https://minciencias.gov.co/}{MinCiencias}.
+I am an Associate Professor at the \href{https://www.psicologia.unbosque.edu.co/investigacion}{Faculty of Psychology} at \href{https://www.unbosque.edu.co/}{Universidad El Bosque} and an active associate researcher within the \href{https://unbosque.portalinvestigacion.com/grupos/302}{\textit{\textbf{CODEC}: Cognitive and Behavioural Sciences}} Research Group (classified \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} by MinCiencias). I lead the \href{https://grupo-codec.netlify.app/semilleros/sexcog/}{\textit{\textbf{SexCog}: Sexuality and Affectivity from a Neurocognitive Perspective}} undergraduate research group and have led and co-led nationally and internationally funded research projects using experimental approaches in cognitive neuroscience. I have completed two competitive postdoctoral research fellowships funded by \href{https://minciencias.gov.co/}{MinCiencias}.
 
 Over the past `r t.experiencia` years, I have combined research and university teaching, contributing to undergraduate and graduate education in the neurobiological and cognitive bases of human behavior while supervising undergraduate, master's, and doctoral research projects.
 \end{minipage}
 \begin{minipage}[c]{0.15\linewidth}
 \begin{flushright}
 \hfill
-\href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm,height=2.3cm]{Logo_SEXCOG.png}}
+\href{https://grupo-codec.netlify.app/semilleros/sexcog/}{\includegraphics[width=2.3cm,height=2.3cm]{Logo_SEXCOG.png}}
 \newline
 \newline
 \newline
