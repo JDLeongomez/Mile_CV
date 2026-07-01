@@ -56,52 +56,60 @@ t.experiencia <- floor(year(Sys.time())-year(as.Date('01/01/09',format='%d/%m/%y
 ```
 
 \begin{minipage}[c]{0.85\linewidth}
-Psicóloga, Máster en Neurociencias Básicas y Aplicadas y Doctora en Neurociencias. Soy investigadora en neurociencia cognitiva aplicada al comportamiento sexual humano. Mi investigación integra la neurociencia cognitiva, la psicología evolutiva y la salud pública para comprender cómo el cerebro procesa la información sexualmente relevante y cómo estos mecanismos configuran la atracción sexual, las preferencias de pareja, la respuesta sexual y el comportamiento sexual. Mediante métodos experimentales —en particular el rastreo ocular— investigo tanto los intereses sexuales normativos como los atípicos, con el objetivo de avanzar en la ciencia básica e informar estrategias basadas en evidencia para la prevención del abuso y la explotación sexual infantil.
+Investigadora en neurociencia cognitiva aplicada al comportamiento sexual humano. Psicóloga, Magíster en Neurociencias Básicas y Aplicadas y Doctora en Neurociencias. Mi investigación integra la neurociencia cognitiva, la psicología evolutiva y la salud pública para comprender cómo el cerebro procesa la información sexualmente relevante y cómo estos mecanismos influyen en la atracción sexual, las preferencias de pareja, la respuesta sexual y el comportamiento sexual. Mediante metodologías experimentales, particularmente el rastreo ocular (eye tracking), estudio tanto los intereses sexuales normativos como los atípicos, con el propósito de contribuir tanto al avance de la ciencia básica como al desarrollo de estrategias basadas en evidencia para promover la salud sexual y prevenir el abuso y la explotación sexual infantil.
 
-Soy Profesora Asociada en la \href{https://www.uelbosque.edu.co/psicologia}{Facultad de Psicología} de la \href{https://www.uelbosque.edu.co/}{Universidad El Bosque} e investigadora asociada activa dentro del grupo \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Ciencias Cognitivas y del Comportamiento}} (clasificado \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} por MinCiencias). Dirijo el semillero de investigación \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: Sexualidad y Afectividad desde una Perspectiva Neurocognitiva}} y he sido directora y codirectora de proyectos de investigación con financiación interna y externa desde una metodología experimental en neurociencia cognitiva. Realicé una estancia postdoctoral en la \href{https://www.cuc.edu.co/}{Universidad de la Costa}, con financiación de \href{https://minciencias.gov.co/}{MinCiencias}.
+Soy Profesora Asociada de la \href{https://www.psicologia.unbosque.edu.co/investigacion}{Facultad de Psicología} de la \href{https://www.unbosque.edu.co/}{Universidad El Bosque} e investigadora asociada del grupo de investigación \href{https://unbosque.portalinvestigacion.com/grupos/302}{\textit{\textbf{CODEC}: Ciencias Cognitivas y del Comportamiento}} (clasificación \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} de MinCiencias). Dirijo el semillero de investigación \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: Sexualidad y Afectividad desde una Perspectiva Neurocognitiva}} y he dirigido y codirigido proyectos de investigación financiados mediante convocatorias nacionales e internacionales, empleando metodologías experimentales propias de la neurociencia cognitiva. He realizado dos estancias posdoctorales competitivas financiadas por \href{https://minciencias.gov.co/}{MinCiencias}.
 
-Durante los últimos `r t.experiencia` años, he combinado la investigación con la docencia universitaria, contribuyendo a la formación de pregrado y posgrado en las bases neurobiológicas y cognitivas del comportamiento humano, y siendo tutora y cotutora de trabajos de grado en niveles de pregrado, maestría y doctorado.
-\end{minipage} 
+Durante los últimos `r t.experiencia` años he combinado la investigación con la docencia universitaria, contribuyendo a la formación de estudiantes de pregrado y posgrado en las bases neurobiológicas y cognitivas del comportamiento humano, así como a la dirección de trabajos de grado de pregrado, maestría y doctorado.
+\end{minipage}
 \begin{minipage}[c]{0.15\linewidth}
-\begin{flushright} 
-\hfill \href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_SEXCOG.png}} \newline \href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_CODEC.png}}
+\begin{flushright}
+\hfill
+\href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm,height=2.3cm]{Logo_SEXCOG.png}}
+\newline
+\newline
+\newline
+\newline
+\href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm,height=2.3cm]{Logo_CODEC.png}}
 \end{flushright}
 \end{minipage}
 
 # Habilidades
 
 \begin{cvskills}
-  \cvskill
-    {Programación}
-    {\href{https://www.r-project.org/}{\textbf{R}} (Básico, análisis de datos y generación de gráficos)}
 
   \cvskill
-    {Investigación cuantitativa}
-    {Estudios observacionales-correlacionales, Modelos lineales generales simples y mixtos}
-  
-  \cvskill
-    {Técnicas de registro}
-    {Rastreo Ocular (principalmente), otras básicas HRV, EEG}
+    {Métodos de investigación}
+    {Rastreo ocular (Eye tracking) • Diseño de investigación experimental y observacional \newline • Investigación mediante encuestas • Evaluación psicométrica • Manipulación experimental de estímulos faciales}
 
   \cvskill
-    {Software}
-    {RStudio, Tobii Pro Lab, Qualtrics, Psychomorph, WebmorphR, Mendeley y Zotero}
+    {Análisis de datos}
+    {R • Modelos lineales generalizados • Modelos de efectos mixtos • Análisis cuantitativo de datos • Visualización de datos}
 
   \cvskill
-    {Languages}
-    {Español/Inglés}
+    {Software de investigación}
+    {RStudio • Tobii Pro Lab • Qualtrics • Psychomorph • WebMorphR}
+
+  \cvskill
+    {Idiomas}
+    {Español (nativo) • Inglés}
+
 \end{cvskills}
 
 # Investigación
 
 \begin{cvskills}
-  \cvskill
-    {Áreas de investigación}
-    {\textbf{Neurociencia cognitiva del comportamiento sexual humano • Mecanismos neurocognitivos de la atracción y la respuesta sexual • Psicología evolutiva de la elección de pareja • Mecanismos neurocognitivos de los intereses sexuales atípicos • Prevención del abuso sexual infantil y la explotación sexual infantil en línea • Rastreo ocular y atención visual}}
 
   \cvskill
-    {Principales métodos de investigación}
-    {Rastreo ocular • Neurociencia cognitiva experimental • Paradigmas de visualización libre y elección forzada • Manipulación de estímulos faciales (Psychomorph) • Evaluación psicométrica • Medidas psicofisiológicas • Análisis cuantitativo de datos}
+    {Áreas de investigación}
+    {Neurociencia cognitiva del comportamiento sexual humano • Psicología evolutiva \newline
+    • Prevención del abuso y la explotación sexual infantil • Tecnologías de rastreo ocular}
+
+  \cvskill
+    {Métodos principales}
+    {Rastreo ocular (Eye tracking) • Diseño experimental • Paradigmas de libre visualización y elección forzada \newline
+    • Evaluación psicométrica • Análisis cuantitativo de datos}
+
 \end{cvskills}
 
 # Educación

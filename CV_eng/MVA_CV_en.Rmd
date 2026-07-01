@@ -55,40 +55,44 @@ t.experiencia <- floor(year(Sys.time())-year(as.Date('01/01/09',format='%d/%m/%y
 ```
 
 \begin{minipage}[c]{0.85\linewidth}
-Psychologist, MSc in Basic and Applied Neurosciences, and PhD in Neurosciences. I am a researcher in cognitive neuroscience applied to human sexual behavior. My research integrates cognitive neuroscience, evolutionary psychology, and public health to understand how the brain processes sexually relevant information and how these mechanisms shape sexual attraction, mate preferences, sexual response, and sexual behavior. Using experimental methods—particularly eye tracking—I investigate both normative and atypical sexual interests, with the goal of advancing basic science and informing evidence-based strategies for the prevention of child sexual abuse and exploitation.
+Researcher in cognitive neuroscience applied to human sexual behavior. Psychologist, MSc in Basic and Applied Neurosciences, and PhD in Neurosciences. My research integrates cognitive neuroscience, evolutionary psychology, and public health to understand how the brain processes sexually relevant information and how these mechanisms shape sexual attraction, mate preferences, sexual response, and sexual behavior. Using experimental methods—particularly eye tracking—I investigate both normative and atypical sexual interests, with the goal of contributing to both basic science and evidence-based strategies to promote sexual health and prevent child sexual abuse and exploitation.
 
-I am an Associate Professor at the \href{https://www.uelbosque.edu.co/psicologia}{Faculty of Psychology} at \href{https://www.uelbosque.edu.co/}{Universidad El Bosque} and an active associate researcher within the \href{https://investigaciones.unbosque.edu.co/codec}{\textit{\textbf{CODEC}: Cognitive and Behavioural Sciences}} Research Group (classified \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} by MinCiencias). I lead the \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: Sexuality and Affectivity from a Neurocognitive Perspective}} research hotbed and have led and co-led internally and externally funded research projects using experimental approaches in cognitive neuroscience. I completed a postdoctoral fellowship at \href{https://www.cuc.edu.co/}{Universidad de la Costa}, funded by \href{https://minciencias.gov.co/}{MinCiencias}.
+I am an Associate Professor at the \href{https://www.psicologia.unbosque.edu.co/investigacion}{Faculty of Psychology} at \href{https://www.unbosque.edu.co/}{Universidad El Bosque} and an active associate researcher within the \href{https://unbosque.portalinvestigacion.com/grupos/302}{\textit{\textbf{CODEC}: Cognitive and Behavioural Sciences}} Research Group (classified \href{https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001446}{\textbf{A1}} by MinCiencias). I lead the \href{https://grupo-codec.netlify.app/sexcog/}{\textit{\textbf{SexCog}: Sexuality and Affectivity from a Neurocognitive Perspective}} undergraduate research group and have led and co-led nationally and internationally funded research projects using experimental approaches in cognitive neuroscience. I have completed two competitive postdoctoral research fellowships funded by \href{https://minciencias.gov.co/}{MinCiencias}.
 
 Over the past `r t.experiencia` years, I have combined research and university teaching, contributing to undergraduate and graduate education in the neurobiological and cognitive bases of human behavior while supervising undergraduate, master's, and doctoral research projects.
 \end{minipage}
 \begin{minipage}[c]{0.15\linewidth}
-\begin{flushright} 
-\hfill \href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_SEXCOG.png}} \newline \href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm, height=2.3cm]{Logo_CODEC.png}}
+\begin{flushright}
+\hfill
+\href{https://grupo-codec.netlify.app/sexcog/}{\includegraphics[width=2.3cm,height=2.3cm]{Logo_SEXCOG.png}}
+\newline
+\newline
+\newline
+\newline
+\href{https://investigaciones.unbosque.edu.co/codec}{\includegraphics[width=2.3cm,height=2.3cm]{Logo_CODEC.png}}
 \end{flushright}
 \end{minipage}
 
 # Skills
 
 \begin{cvskills}
-  \cvskill
-    {Programming}
-    {\href{https://www.r-project.org/}{\textbf{R}} (Basic, data analysis and graph generation)}
 
   \cvskill
-    {Quantitative Research}
-    {Observational-correlational studies, Simple and Mixed general linear models}
-  
-  \cvskill
-    {Recording techniques}
-    {Eye tracking (mainly), other basic HRV, EEG}
+    {Research Methods}
+    {Eye tracking • Experimental and observational research design \newline • Survey research • Psychometric assessment • Psychophysiological measures (HRV)}
 
   \cvskill
-    {Software}
-    {RStudio, Tobii Pro Lab, Qualtrics, Psychomorph, WebmorphR, Mendeley and Zotero}
+    {Data Analysis}
+    {R • Generalized linear models • Mixed-effects models • Quantitative data analysis • Data visualization}
+
+  \cvskill
+    {Research Software}
+    {RStudio • Tobii Pro Lab • Qualtrics • Psychomorph • WebMorphR}
 
   \cvskill
     {Languages}
-    {English/Spanish (native)}
+    {Spanish (native) • English}
+
 \end{cvskills}
 
 # Research
@@ -97,11 +101,13 @@ Over the past `r t.experiencia` years, I have combined research and university t
 
   \cvskill
     {Research Areas}
-    {\textbf{Cognitive neuroscience of human sexual behavior • Neurocognitive mechanisms of sexual attraction \& sexual response • Evolutionary psychology of mate choice • Neurocognitive mechanisms of atypical sexual interests • Prevention of child sexual abuse \& online child sexual exploitation • Eye tracking \& visual attention}}
+    {Cognitive neuroscience • Human sexual behavior • Sexual attraction • Eye tracking \& visual attention \newline 
+    Prevention of child sexual abuse \& online child sexual exploitation}
 
   \cvskill
     {Primary Research Methods}
-    {Eye tracking • Experimental cognitive neuroscience • Free-viewing \& forced-choice paradigms • Facial stimulus manipulation (Psychomorph) • Psychometric assessment • Psychophysiological measures • Quantitative data analysis}
+    {Eye tracking • Experimental cognitive neuroscience • Free-viewing \& forced-choice paradigms\newline 
+    Psychometric assessment • Psychophysiological measures • Quantitative data analysis}
 
 \end{cvskills}
 
